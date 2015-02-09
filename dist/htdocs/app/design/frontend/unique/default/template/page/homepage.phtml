@@ -1,0 +1,148 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout" style="padding:0;">
+            <div class="main">
+                <!-- HEADLINES -->
+                    <div class="col-75">
+                        <a href="accessoires.html"><div class="headline-big">
+                            <div class="headlinebiginhoud">
+                                <div class="headlinebigtitle">Toe aan nieuwe accessoires voor uw smartphone of tablet?</div>
+                                <div class="headlinebigmore">Klik hier</div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-25">
+                        <div class="headline-small1">
+                            <div class="headlinesmallinhoudupper">
+                                <div class="headlinesmalltitle">
+                                    Smartphone<br/>
+                                    <span style="font-family: 'Open Sans'; font-weight: bold; font-size: 14px;">onderdelen</span>
+                                </div>
+                            </div>
+                            <div class="headlinesmallinhoud">
+                                <div class="headlinesmallmore">Klik hier</div>
+                            </div>
+                        </div>
+                        <div class="headline-small2">
+                             <div class="headlinesmallinhoudupper">
+                                <div class="headlinesmalltitle">
+                                    Tablet<br/>
+                                    <span style="font-family: 'Open Sans'; font-weight: bold; font-size: 14px;">onderdelen</span>
+                                </div>
+                            </div>
+                            <div class="headlinesmallinhoud">
+                                <div class="headlinesmallmore">Klik hier</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cb"></div>
+                    <div class="eigenschappen">
+                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap1.png'); ?>" alt="arrow"/>
+                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap2.png'); ?>" alt="arrow"/>
+                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap3.png'); ?>" alt="arrow"/>
+                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap4.png'); ?>" alt="arrow"/>
+                    </div>
+                    <div class="cb"></div>
+                    <div class="col-75" style="width: 74%;margin-right:1%;">
+                        <div class="banner75">Populaire onderdelen</div>
+                        <div class="producten">
+                            <div class="product75">
+                                asd
+                            </div>
+                            <div class="product75">
+                                asd
+                            </div>
+                            <div class="product75" style="margin:0;">
+                                asd
+                            </div>
+                        </div>
+
+                        <div class="banner75">Populaire accessoires</div>
+                        <div class="producten">
+                            <div class="product75">
+                                asd
+                            </div>
+                            <div class="product75">
+                                asd
+                            </div>
+                            <div class="product75" style="margin:0;">
+                                asd
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <div class="thumbnail1">
+                            <strong>Zelf geen telefoon repareren?</strong><br />
+                            Stuur uw toestel op!
+                        </div>
+                        <div class="thumbnail2">
+                            <strong>Hulp nodig?</strong><br />
+                            Maak een afspraak!
+                        </div>
+                    </div>
+                <!-- /HEADLINES -->
+                <div class="col-main">
+                    <?php // echo $this->getChildHtml('global_messages') ?>
+                    <?php //echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+

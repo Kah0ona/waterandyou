@@ -1,0 +1,212 @@
+.col-75 {
+  width: 74.8%;
+  margin-right: 0.2%;
+  float: left;
+}
+
+.col-25 {
+  width: 25%;
+  float: left;
+}
+
+.headline-big {
+  background: url(../images/headline-big.png);
+  height: 329px;
+  position: relative;
+  background-size: cover;
+}
+
+.headline-small1 {
+  background: url(../images/headline-small1.png);
+  height: 164px;
+  position: relative;
+  background-size: cover;
+}
+
+.headline-small2 {
+  background: url(../images/headline-small2.png);
+  height: 164px;
+  position: relative;
+  background-size: cover;
+  margin-top: 1px;
+}
+
+.headline-big:hover, .headline-small1:hover, .headline-small2:hover {
+  opacity: 0.8;
+}
+
+.eigenschappen {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 auto;
+  background: #fff;
+  height: 61px;
+}
+
+.eigenschapimg {
+  padding: 15px 30px;
+  display: inline;
+}
+
+.cb {
+  clear: both;
+}
+
+.banner75 {
+  font-family: 'Oswald', sans-serif;
+  padding: 5px 10px;
+  font-size: 22px;
+  color: white;
+  background: #1c1c1c;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.product75 {
+  width: 32.66%;
+  margin-right: 1%;
+  background: white;
+  float: left;
+  border-radius: 3px;
+  height: 200px;
+}
+.product75:last-of-type {
+  margin: 0;
+}
+
+.producten {
+  clear: both;
+  height: 200px;
+}
+
+.thumbnail1 {
+  background: url(../images/thumb1.png);
+  height: 113px;
+  background-size: cover;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  padding: 32px 20px;
+  text-shadow: 0px -1px 0px black;
+}
+
+.thumbnail2 {
+  background: url(../images/thumb2.png);
+  height: 113px;
+  background-size: cover;
+  margin-top: 10px;
+  padding: 32px 20px;
+  color: white;
+  font-size: 15px;
+  text-shadow: 0px -1px 0px black;
+}
+
+.page-header {
+  padding: 0;
+}
+
+.page-header-container .logo {
+  padding: 0;
+  padding-top: 20px;
+}
+
+.nav-1 a {
+  padding-left: 0 !important;
+}
+
+.footer {
+  border: 0;
+  margin-top: 10px;
+  background: url(../images/headerbg.png);
+  background-size: cover;
+  height: 200px;
+}
+
+.footer25 {
+  float: left;
+  width: 23%;
+  margin-right: 6%;
+  margin-top: 30px;
+}
+.footer25:last-of-type {
+  margin-right: 0;
+}
+
+.footer-container {
+  padding: 0;
+}
+
+.copyrighted {
+  background: white;
+  color: #333;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.headlinebiginhoud {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.headlinebigtitle {
+  background: url(../images/black.png);
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.headlinebigmore {
+  background: white;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 111px;
+}
+
+.headlinesmallinhoud {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.headlinesmalltitle {
+  background: url(../images/black.png);
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 18px;
+  padding: 6px 7px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.headlinesmallmore {
+  background: white;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  padding: 3px 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 73px;
+}
+
+.headlinesmallinhoudupper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.nav-primary {
+  margin-top:0 !important;
+}

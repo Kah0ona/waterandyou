@@ -7,8 +7,8 @@ module.exports = {
   // ----- Watch tasks ----- //
   all: {
     files: [
-      'fixit_app/*',
-	  'fixit_skin/*',
+      'fixit_app/**',
+	  'fixit_skin/default/css/*',
 	],
     tasks: [
 	  'clean:dist',
