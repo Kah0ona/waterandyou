@@ -35,12 +35,24 @@
 .footer button {
     font-family: $f-stack-special;
 }
-
+.logo-bottom{
+    background:#31659e !important;
+    border-radius:10px 10px 0px 0px;
+    position:absolute; 
+    top:-70px; 
+    padding:20px;
+    img{
+        width:100%
+    }
+}
 .footer {
+    position:relative;
+    color:white;
     clear: both;
     width: 100%;
     border-top: 1px solid $c-module-border;
     padding-top: $trim;
+    background:#31659e !important;
 
     @include bp(max-width, $bp-xsmall) {
         padding-top: $trim-small;

@@ -8,8 +8,8 @@ module.exports = {
 		options: {
 			host: "vps7689.xlshosting.net",
 			port: "1023",
-			user: "fixittelecom",
-			remoteBase: "/home/fixittelecom/htdocs"
+			user: "waterandyou",
+			remoteBase: "/home/waterandyou/htdocs"
 		}
 	}
 };

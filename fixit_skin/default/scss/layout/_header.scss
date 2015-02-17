@@ -26,13 +26,18 @@
 /* ============================================ *
  * Header
  * ============================================ */
-
+.center{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px; 
+}
 @include bp(min-width, $bp-medium + 1) {
 
     .page-header {
         max-width: $max-container-width;
         margin: 0 auto;
         padding: 0 $trim;
+        text-align: center;
     }
 
     .page-header-container {
@@ -40,7 +45,9 @@
     }
 
 }
-
+.page{
+    background:#fff !important;
+}
 .header-language-container,
 .page-header {
     font-family: $f-stack-special;
@@ -49,7 +56,18 @@
 /* ============================================ *
  * Language switcher + welcome message
  * ============================================ */
-
+.top-bar{
+    background-color: rgba(255, 255, 255, 0.8);
+    height:50px !important;
+    width:100%;   
+    z-index: 999;
+    -webkit-box-shadow: 3px 4px 14px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 4px 14px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 4px 14px 0px rgba(50, 50, 50, 0.75);
+    h3{
+        line-height: 1.3;
+    }
+}
 .header-language-background {
     padding: 0px;
     background-color: $c-action;
@@ -350,4 +368,13 @@ a.skip-link {
     @include bp(max-width, $bp-medium) {
         position: static;
     }
+}
+.headerbackground{
+    background-image: url(../images/header-background2.png); 
+    background-size:100%;  
+    background-repeat:no-repeat;
+    padding-top:60px;
+}
+.nav{
+    background:none !important;
 }

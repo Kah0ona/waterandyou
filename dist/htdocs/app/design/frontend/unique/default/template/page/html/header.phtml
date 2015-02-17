@@ -39,65 +39,66 @@
         <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
     </div>
 </div> -->
-<div class="headerbg">
-<header id="header" class="page-header">
-    <div class="page-header-container">
-        <a class="logo" href="<?php echo $this->getUrl('') ?>">
-            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
-            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
-        </a>
+<div class="top-bar">
 
-        <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
-              // See app.js for details ?>
-        <div class="store-language-container"></div>
-
-        <!-- Skip Links -->
-        <div class="skip-links">
-            <a href="#header-nav" class="skip-link skip-nav">
+    <div class="main-container">
+        <h3>+31 (0)6 3432 0498</h3> 
+        <div class="account-cart-wrapper">
+            <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
                 <span class="icon"></span>
-                <span class="label"><?php echo $this->__('Menu'); ?></span>
+                <span class="label"><?php echo $this->__('Word Klant'); ?></span>
             </a>
 
-            <a href="#header-search" class="skip-link skip-search">
-                <span class="icon"></span>
-                <span class="label"><?php echo $this->__('Search'); ?></span>
-            </a>
+            <!-- Cart -->
 
-            <div class="account-cart-wrapper">
-                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
-                    <span class="icon"></span>
-                    <span class="label"><?php echo $this->__('Mijn Account'); ?></span>
-                </a>
-
-                <!-- Cart -->
-
-                <div class="header-minicart">
-                    <?php echo $this->getChildHtml('minicart_head'); ?>
-                </div>
+            <div class="header-minicart">
+                <?php echo $this->getChildHtml('minicart_head'); ?>
             </div>
-
-
         </div>
-
-        <!-- Navigation -->
-
-        <!-- Search -->
-
-
-
-        <!-- Account -->
-
-        <div id="header-account" class="skip-content">
-            <?php echo $this->getChildHtml('topLinks') ?>
-        </div>
-    </div>
-
-</header>
-    <div id="header-nav" class="skip-content">
-        
-            <?php echo $this->getChildHtml('topMenu') ?>
     </div>
 </div>
+<div class="headerbackground">
+    <header id="header" class="page-header">
+        <div class="center"><img style="margin:0 auto;" src="<?php echo $this->getSkinUrl('images/logo-water.png'); ?>"/></div>
+        <div class="page-header-container">
+            
+
+            <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
+                  // See app.js for details ?>
+            <div class="store-language-container"></div>
+
+            <!-- Skip Links -->
+            <div class="skip-links">
+                <a href="#header-nav" class="skip-link skip-nav">
+                    <span class="icon"></span>
+                    <span class="label"><?php echo $this->__('Menu'); ?></span>
+                </a>
+
+                
+
+
+            </div>
+
+            <!-- Navigation -->
+
+            <!-- Search -->
+
+
+
+            <!-- Account -->
+
+            <div id="header-account" class="skip-content">
+                <?php echo $this->getChildHtml('topLinks') ?>
+            </div>
+        </div>
+        <div id="header-nav" class="skip-content">
+            <?php echo $this->getChildHtml('topMenu') ?>
+        </div>
+        <img style="margin:0 auto;" src="<?php echo $this->getSkinUrl('images/bottles.png'); ?>"/>
+    </header>
+</div>
+    
+
 
 
 <?php echo $this->getChildHtml('topContainer'); ?>

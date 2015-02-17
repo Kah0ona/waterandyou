@@ -24,28 +24,49 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+
+
     <div class="footer">
-    	<div class="footer-container">
+
+    	<div class="u-gridContainer">
+    		<div class="logo-bottom">
+				<img src="<?php echo $this->getSkinUrl('images/logo-white.png'); ?>"/>
+			</div>
         <?php // echo $this->getChildHtml() ?>
         <!-- <address class="copyright"><?php echo $this->getCopyright() ?></address> -->
 
-	        <div class="footer25">
-	        	<img src="<?php echo $this->getSkinUrl('images/logo.png'); ?>"/>
+	        <div class="u-gridCol2">
+	        	<b>ADRESGEGEVENS</b>
+	        	<ul>	
+	        		<li>Boudroz International BV</li>
+	        		<li>Postbus 56739</li>
+	        		<li>1040 AS Amsterdam</li>
+	        		<li>Importeur BENELUX</li>
+	        	</ul>
 	        </div>
-	        <div class="footer25">
-	        	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footerblock1')->toHtml() ?>
+	        <div class="u-gridCol3">
+	        	<b>CONTACT</b>
+	        	<ul>	
+	        		<li>info@waterandwhatuneed.com</li>
+	        		<li>+31(0)6 3423 0498</li>
+	        	</ul>
 	        </div>
-	        <div class="footer25">
-				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footerblock2')->toHtml() ?>
+	        <div class="u-gridCol2">
+	        	<b>SOCIAL MEDIA</b>
 	        </div>
-	        <div class="footer25">
-				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footerblock3')->toHtml() ?>
+	        <div class="u-gridCol2">
+	        	<b>ONZE APP</b>
+	        	<img src="<?php echo $this->getSkinUrl('images/playstore.png'); ?>"/>
 	        </div>
+	        <div class="u-gridCol3">
+	        	<b>SITEMAP</b>
+	        </div>
+	        
     	</div>
 	</div>
 	<div class="copyrighted">
 		<div class="footer-container">
-			&copy; Fixit Telecom - Alle rechten voorbehouden - Webshop en SEO door LokaalGevonden.nl
+			&copy; Water&what u need - Alle rechten voorbehouden - Webshop en SEO door LokaalGevonden.nl
 		</div>
 	</div>
 </div>

@@ -86,7 +86,6 @@
 
     #header-nav {
         display: block; /* Force visibility */
-        border-bottom: 1px solid $c-module-border-light;
     }
 
 }
@@ -106,10 +105,10 @@
  * General Navigation Styles
  * ============================================ */
 
-$nav-primary-height: 50px;
+$nav-primary-height: 40px;
 
 nav {
-    background: white;
+    height:40px !important;
 }
 
 .nav-primary {
@@ -126,6 +125,7 @@ nav {
 
     li {
         position: relative;
+        border-right:1px solid black;
     }
 
     li.level1 a {
@@ -258,7 +258,7 @@ nav {
             // Sub-menu drop down to the left
             li.level1 ul {
                 left: auto;
-                right: 50px;
+                right: 40px;
                 top: 20px;
             }
         }
@@ -270,7 +270,7 @@ nav {
             &:after {
                 @include triangle(right, 4px, #ccc);
                 right: 5px;
-                top: 50%;
+                top: 50%; 
                 margin-top: -3px;
             }
         }
