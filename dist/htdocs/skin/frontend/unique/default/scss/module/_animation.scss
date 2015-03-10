@@ -1,0 +1,214 @@
+
+//==========infographic============== 
+.description-info{
+  width:50%;
+  float:left;
+  .pie-container{
+    width:170px;
+    float:left;
+    text-align: center;
+    h3{
+      color:black; 
+    }
+  }
+  *, *:before, *:after{
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+  
+  .pie
+  {
+      width: 140px;
+      height: 140px;
+      position: relative;
+      border-radius: 140px; 
+      background-color: #C4EFFF; 
+      margin:auto;  
+  }
+
+  .mask
+  {
+      position: absolute; 
+      width: 100%; 
+      height: 100%;  
+  }
+
+  .outer-right
+  {
+      clip: rect(0px 140px 140px 70px);
+  }
+
+  .inner-right
+  {
+      background-color: #0DBCE5;
+      position: absolute; 
+      width: 100%; 
+      height: 100%;  
+      border-radius: 100%;
+      clip: rect(0px 70px 140px 0px);
+      -webkit-transform: rotate(170deg);
+      transform: rotate(180deg);
+      animation: load-right 1s linear;
+      -webkit-animation: load-right 1s linear;
+  }
+  .inner-right-2
+  {
+      background-color: #0DBCE5;
+      position: absolute; 
+      width: 100%; 
+      height: 100%;  
+      border-radius: 100%;
+      clip: rect(0px 70px 140px 0px);
+      -webkit-transform: rotate(20deg);
+      transform: rotate(30deg); 
+      animation: load-right 1s linear;
+      -webkit-animation: load-right 1s linear;
+  }
+  @keyframes load-right
+  {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(180deg);}
+  }
+
+  @-webkit-keyframes load-right
+  {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(180deg);}
+  }
+
+  .outer-left
+  {
+      clip: rect(0px 70px 140px 0px);
+  }
+  
+  .inner-left
+  {
+      background-color: #0DBCE5;
+      position: absolute; 
+      width: 100%; 
+      height: 100%;  
+      border-radius: 100%; 
+      clip: rect(0px 70px 140px 0px);
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      animation: load-left 0.6s linear;
+      animation-delay: 1s;
+      animation-fill-mode:forwards;
+      -webkit-animation: load-left 0.6s linear;
+      -webkit-animation-delay: 1s;
+      -webkit-animation-fill-mode:forwards;
+  }
+
+  @keyframes load-left
+  {
+      from {transform: rotate(-180deg);}
+      to {transform: rotate(-120deg);}
+  }
+
+
+  @-webkit-keyframes load-left
+  {
+      from {transform: rotate(-180deg);}
+      to {transform: rotate(-120deg);}
+  }
+
+  .content
+  {
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      background-color:#eee;
+      position:absolute;
+      top:20px;
+      left:20px;
+      line-height: 100px;
+      font-family:arial, sans-serif;
+      font-size:35px;
+      text-align: center;
+  }
+
+  .content span
+  {
+      opacity: 0;
+      animation: load-content 3s;
+      animation-fill-mode:forwards;
+      animation-delay: 0.6s;
+      -webkit-animation: load-content 3s;
+      -webkit-animation-fill-mode:forwards;
+      -webkit-animation-delay: 0.6s; 
+  }
+
+  @keyframes load-content
+  {
+      from {opacity:0;}
+      to {opacity:1;}
+  }
+
+  @-webkit-keyframes load-content
+  {
+      from {opacity:0;}
+      to {opacity:1;}
+  }
+}
+
+
+//=======graph======
+.bar-container{
+  width:400px;
+  float:left; 
+  h4{
+    color:white;
+    line-height:3;
+    margin-left: 20px;
+  }
+  .red{
+    background:#f7573f;
+  } 
+  .yellow{
+    background:#feac0b;
+  }
+  .green{
+    background-color:#59c241;
+  }
+  .blue{
+    background:#61a3d3;
+    border-radius: 0px 0px 15px 15px; 
+  }
+  .light-blue{
+    background:#99caf5;
+
+  }
+}
+.bar-header{
+  background:#3382bb;
+  height:40px;
+  border-radius:15px 15px 0px 0px;
+}
+.bar{
+  width:0%;
+  height: 30px;
+  overflow:hidden; 
+  color:white;
+  padding-right:20px;
+  padding-left:20px;
+  line-height:2.5;
+}
+.bar-value{
+  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  float:right;
+  width:30px;
+  height:40px;
+  margin-left: 10em; 
+  text-align: center;
+  text-shadow: black 1px 1px;
+}
+.bar-info{
+  float:right;
+}
+.bar-type{
+  float:left; 
+}
+

@@ -139,7 +139,11 @@ h6, .h6 { @include h6; }
 .product-name .h1 {
     @include pageTitle;
 }
-
+.page-title{
+    h1{
+        text-align:left !important;
+    }
+}
 /* -------------------------------------------- *
  * Block Module
  */
@@ -761,7 +765,8 @@ a.button:hover {
 .col-right,
 .col-main {
     padding: 0 10px;
-}
+    margin-bottom:80px; 
+} 
 
 .col-left {
     float: left;

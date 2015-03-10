@@ -41,103 +41,338 @@
 <head>
 <?php echo $this->getChildHtml('head') ?>
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<script src="<?php echo $this->getSkinUrl('js/homepagetabs.js'); ?>" type="text/javascript"></script>
 </head>
+
+
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
-        <div class="main-container col1-layout" style="padding:0;">
+        <div class="main-bottles">
+            <img style="margin:0 auto; z-index:99;" src="<?php echo $this->getSkinUrl('images/bottles.png'); ?>"/>
+        </div>
             <div class="main">
                 <!-- HEADLINES -->
-                    <div class="col-75">
-                        <a href="accessoires.html"><div class="headline-big">
-                            <div class="headlinebiginhoud">
-                                <div class="headlinebigtitle">Toe aan nieuwe accessoires voor uw smartphone of tablet?</div>
-                                <div class="headlinebigmore">Klik hier</div>
-                            </div>
-                        </div></a>
+                <div class="bubble-background">
+                    <div class="home-gradient">
+                        <div class="white-curve"></div>
+
+
                     </div>
-                    <div class="col-25">
-                        <div class="headline-small1">
-                            <div class="headlinesmallinhoudupper">
-                                <div class="headlinesmalltitle">
-                                    Smartphone<br/>
-                                    <span style="font-family: 'Open Sans'; font-weight: bold; font-size: 14px;">onderdelen</span>
+                        <div class="u-gridContainer cont-relative">
+                            <div class="u-gridRow cont-abso product-tabs">
+                                
+                                <div class="u-gridCol3">
+                                    <div class="fruit">
+                                        <img src="<?php echo $this->getSkinUrl('images/lime-mint-final.png'); ?>"/>
+                                    </div>
+                                    <div class="bottle-box-head product-tab" data-target="tab-target1">
+                                        <h2><strong>WATER&</strong>FRESH</h2>
+                                        
+                                    </div>  
+                                </div>
+                                
+                                <div class="u-gridCol3">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/mellon-lychee-cut.png'); ?>"/></div>
+                                    <div class="bottle-box-head product-tab" data-target="tab-target2">
+                                        <h2><strong>WATER&</strong>ENERGY</h2> 
+                                        
+                                    </div>  
+                                </div>
+                                <div class="u-gridCol3 ">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/watereasy.png'); ?>"/></div>
+                                    <div class="bottle-box-head product-tab" data-target="tab-target3">
+                                        <h2><strong>WATER&</strong>EASY</h2>
+                                        
+                                    </div> 
+                                </div>
+                                <div class="u-gridCol3">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/waterfree.png'); ?>"/></div>
+                                        <div class="bottle-box-head product-tab" data-target="tab-target4">
+                                        <h2><strong>WATER&</strong>FREE</h2>
+                                        
+                                    </div> 
                                 </div>
                             </div>
-                            <div class="headlinesmallinhoud">
-                                <div class="headlinesmallmore">Klik hier</div>
-                            </div>
-                        </div>
-                        <div class="headline-small2">
-                             <div class="headlinesmallinhoudupper">
-                                <div class="headlinesmalltitle">
-                                    Tablet<br/>
-                                    <span style="font-family: 'Open Sans'; font-weight: bold; font-size: 14px;">onderdelen</span>
+
+                            <div class="u-gridRow cont-abso-2 product-tab-content-container">
+
+                                <div class="u-gridCol3 bottle-box-content product-tab-content" id="tab-target1" >
+                                    
+                                    <div class="full-width-image-2">
+                                        <p>Munt en Limoen</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle.jpg'); ?>" data-target="tab-target1"/>
+                                    </div>
+                                        <div class="description"> 
+                                            <div class="description-text">
+                                                <h2>Waarom <strong>WATER&</strong>FRESH?</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit fermentum odio, vitae tristique lacus iaculis sit amet. Nullam tempor condimentum mattis. Sed eget turpis accumsan, eleifend nisl vitae, consequat quam. Vestibulum placerat risus et risus ultrices, ac pellentesque arcu sagittis. Etiam massa quam, blandit congue dignissim ac, viverra non nisi. Nam quis fringilla neque, quis ornare tortor. Nullam quam turpis, sollicitudin a quam at, fermentum scelerisque est. Proin sodales finibus nisl, ac imperdiet dui tempus at. Suspendisse a congue velit.
+
+                                                </p>
+                                            </div>
+                                            <div class="description-info">
+                                                <h2><strong>WATER&</strong>ENERGY Bevat</h2>
+                                                
+                                                <div class="bar-container">
+                                                    <div class="bar-header"><h4>Voedingswaarden</h4></div>
+
+                                                    <div class="red bar">
+                                                        <div class="bar-type"><p>Energie</p></div>
+                                                        <div class="bar-value"> <p>19.5</p></div>
+                                                        <div class="bar-info"><p>Kcal</p></div>
+                                                    </div>
+                                                    <div class="yellow bar">
+                                                        <div class="bar-type"><p>Koolhydraten</p></div>
+                                                        <div class="bar-value"> <p>4.9</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="green bar">
+                                                        <div class="bar-type"><p>Protiene</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="light-blue bar">
+                                                        <div class="bar-type"><p>Vet</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="blue bar">
+                                                        <div class="bar-type"><p>Sodium</p></div>
+                                                        <div class="bar-value"> <p>2</p></div>
+                                                        <div class="bar-info"><p>mg</p></div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+
+                                        </div>
+                                        <a href="productoverzicht/fresh/water-fresh.html">Lees meer></a>
+                                    
                                 </div>
-                            </div>
-                            <div class="headlinesmallinhoud">
-                                <div class="headlinesmallmore">Klik hier</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="eigenschappen">
-                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap1.png'); ?>" alt="arrow"/>
-                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap2.png'); ?>" alt="arrow"/>
-                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap3.png'); ?>" alt="arrow"/>
-                        <img class="eigenschapimg" src="<?php echo $this->getSkinUrl('images/eigenschap4.png'); ?>" alt="arrow"/>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="col-75" style="width: 74%;margin-right:1%;">
-                        <div class="banner75">Populaire onderdelen</div>
-                        <div class="producten">
-                            <div class="product75">
-                                asd
-                            </div>
-                            <div class="product75">
-                                asd
-                            </div>
-                            <div class="product75" style="margin:0;">
-                                asd
+
+                                <div class="u-gridCol3 bottle-box-content product-tab-content" id="tab-target2" data-target="tab-target2">
+
+                                    <div class="full-width-image">
+                                        <p>Lychee en Watermeloen</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle-energy.jpg'); ?>"/>
+                                    </div>
+
+                                    <div class="description"> 
+                                            <div class="description-text">
+                                                <h2>Waarom <strong>WATER&</strong>ENERGY?</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit fermentum odio, vitae tristique lacus iaculis sit amet. Nullam tempor condimentum mattis. Sed eget turpis accumsan, eleifend nisl vitae, consequat quam. Vestibulum placerat risus et risus ultrices, ac pellentesque arcu sagittis. Etiam massa quam, blandit congue dignissim ac, viverra non nisi. Nam quis fringilla neque, quis ornare tortor. Nullam quam turpis, sollicitudin a quam at, fermentum scelerisque est. Proin sodales finibus nisl, ac imperdiet dui tempus at. Suspendisse a congue velit.
+
+                                                </p>
+                                            </div>
+                                            <div class="description-info">
+                                                <h2><strong>WATER&</strong>ENERGY Bevat</h2>
+                                                
+                                                <div class="bar-container">
+                                                    <div class="bar-header"><h4>Voedingswaarden</h4></div>
+
+                                                    <div class="red bar">
+                                                        <div class="bar-type"><p>Energie</p></div>
+                                                        <div class="bar-value"> <p>19.5</p></div>
+                                                        <div class="bar-info"><p>Kcal</p></div>
+                                                    </div>
+                                                    <div class="yellow bar">
+                                                        <div class="bar-type"><p>Koolhydraten</p></div>
+                                                        <div class="bar-value"> <p>4.9</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="green bar">
+                                                        <div class="bar-type"><p>Protiene</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="light-blue bar">
+                                                        <div class="bar-type"><p>Vet</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="blue bar">
+                                                        <div class="bar-type"><p>Sodium</p></div>
+                                                        <div class="bar-value"> <p>2</p></div>
+                                                        <div class="bar-info"><p>mg</p></div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+
+                                        </div>
+
+                                    <a href="productoverzicht/energy/water-fresh.html">Lees meer></a>
+                                </div>
+
+                                <div class="u-gridCol3 bottle-box-content product-tab-content" id="tab-target3">
+
+                                    <div class="full-width-image">
+                                        <p>Citroengras en Verbana</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle-easy.jpg'); ?>"/>
+                                    </div>
+                                    <div class="description"> 
+                                            <div class="description-text">
+                                                <h2>Waarom <strong>WATER&</strong>EASY?</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit fermentum odio, vitae tristique lacus iaculis sit amet. Nullam tempor condimentum mattis. Sed eget turpis accumsan, eleifend nisl vitae, consequat quam. Vestibulum placerat risus et risus ultrices, ac pellentesque arcu sagittis. Etiam massa quam, blandit congue dignissim ac, viverra non nisi. Nam quis fringilla neque, quis ornare tortor. Nullam quam turpis, sollicitudin a quam at, fermentum scelerisque est. Proin sodales finibus nisl, ac imperdiet dui tempus at. Suspendisse a congue velit.
+
+                                                </p>
+                                            </div>
+                                            <div class="description-info">
+                                                <h2><strong>WATER&</strong>ENERGY Bevat</h2>
+                                                
+                                                <div class="bar-container">
+                                                    <div class="bar-header"><h4>Voedingswaarden</h4></div>
+
+                                                    <div class="red bar">
+                                                        <div class="bar-type"><p>Energie</p></div>
+                                                        <div class="bar-value"> <p>19.5</p></div>
+                                                        <div class="bar-info"><p>Kcal</p></div>
+                                                    </div>
+                                                    <div class="yellow bar">
+                                                        <div class="bar-type"><p>Koolhydraten</p></div>
+                                                        <div class="bar-value"> <p>4.9</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="green bar">
+                                                        <div class="bar-type"><p>Protiene</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="light-blue bar">
+                                                        <div class="bar-type"><p>Vet</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="blue bar">
+                                                        <div class="bar-type"><p>Sodium</p></div>
+                                                        <div class="bar-value"> <p>2</p></div>
+                                                        <div class="bar-info"><p>mg</p></div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+
+                                        </div>
+
+                                    <a href="productoverzicht/easy/water-fresh.html">Lees meer></a>
+                                </div>
+
+                                <div class="u-gridCol3 bottle-box-content product-tab-content" id="tab-target4">
+
+                                    <div class="full-width-image">
+                                        <p>Vrij van suiker en koolhydraten</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle-free.jpg'); ?>"/>
+                                    </div>
+                                    <div class="description"> 
+                                            <div class="description-text">
+                                                <h2>Waarom <strong>WATER&</strong>FREE?</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit fermentum odio, vitae tristique lacus iaculis sit amet. Nullam tempor condimentum mattis. Sed eget turpis accumsan, eleifend nisl vitae, consequat quam. Vestibulum placerat risus et risus ultrices, ac pellentesque arcu sagittis. Etiam massa quam, blandit congue dignissim ac, viverra non nisi. Nam quis fringilla neque, quis ornare tortor. Nullam quam turpis, sollicitudin a quam at, fermentum scelerisque est. Proin sodales finibus nisl, ac imperdiet dui tempus at. Suspendisse a congue velit.
+
+                                                </p>
+                                            </div>
+                                            <div class="description-info">
+                                                <h2><strong>WATER&</strong>ENERGY Bevat</h2>
+                                                
+                                                <div class="bar-container">
+                                                    <div class="bar-header"><h4>Voedingswaarden</h4></div>
+
+                                                    <div class="red bar">
+                                                        <div class="bar-type"><p>Energie</p></div>
+                                                        <div class="bar-value"> <p>1</p></div>
+                                                        <div class="bar-info"><p>Kcal</p></div>
+                                                    </div>
+                                                    <div class="yellow bar">
+                                                        <div class="bar-type"><p>Koolhydraten</p></div>
+                                                        <div class="bar-value"> <p>0.25</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="green bar">
+                                                        <div class="bar-type"><p>Protiene</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="light-blue bar">
+                                                        <div class="bar-type"><p>Vet</p></div>
+                                                        <div class="bar-value"> <p>0</p></div>
+                                                        <div class="bar-info"><p>Gram</p></div>
+                                                    </div>
+                                                    <div class="blue bar">
+                                                        <div class="bar-type"><p>Sodium</p></div>
+                                                        <div class="bar-value"> <p>6</p></div>
+                                                        <div class="bar-info"><p>mg</p></div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+
+                                        </div>
+
+                                    <a href="productoverzicht/free/water-fresh.html">Lees meer></a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="banner75">Populaire accessoires</div>
-                        <div class="producten">
-                            <div class="product75">
-                                asd
+
+                       <!-- <div class="u-gridContainer cont-relative">
+                            <div class="u-gridRow cont-abso">
+                                
+                                <div class="u-gridCol3">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/lime-mint-final.png'); ?>"/></div>
+                                    <div class="bottle-box">
+                                        <h2><strong>WATER&</strong>FRESH</h2>
+                                        <p>Munt en Limoen</p>
+                                        <div class="expand">
+                                            <img src="<?php echo $this->getSkinUrl('images/bottle.jpg'); ?>"/>
+                                            <a href="#">Lees meer></a>
+                                        </div>
+                                    </div>  
+                                </div>
+
+                                <div class="u-gridCol3">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/mellon-lychee-cut.png'); ?>"/></div>
+                                    <div class="bottle-box">
+                                        <h2><strong>WATER&</strong>ENERGY</h2> 
+                                        <p>Lychee en Watermeloen</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle-energy.jpg'); ?>"/>
+                                        <a href="#">Lees meer></a>
+                                    </div>  
+                                </div>
+                                <div class="u-gridCol3">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/watereasy.png'); ?>"/></div>
+                                    <div class="bottle-box">
+                                        <h2><strong>WATER&</strong>EASY</h2>
+                                        <p>Citroengras en Verbana</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle-easy.jpg'); ?>"/>
+                                        <a href="#">Lees meer></a>
+                                    </div> 
+                                </div>
+                                <div class="u-gridCol3">
+                                    <div class="fruit"><img src="<?php echo $this->getSkinUrl('images/waterfree.png'); ?>"/></div>
+                                        <div class="bottle-box">
+                                        <h2><strong>WATER&</strong>FREE</h2>
+                                        <p>Vrij van suiker en koolhydraten</p>
+                                        <img src="<?php echo $this->getSkinUrl('images/bottle-free.jpg'); ?>"/>
+                                        <a href="#">Lees meer></a>
+                                    </div> 
+                                </div>
                             </div>
-                            <div class="product75">
-                                asd
-                            </div>
-                            <div class="product75" style="margin:0;">
-                                asd
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-25">
-                        <div class="thumbnail1">
-                            <strong>Zelf geen telefoon repareren?</strong><br />
-                            Stuur uw toestel op!
-                        </div>
-                        <div class="thumbnail2">
-                            <strong>Hulp nodig?</strong><br />
-                            Maak een afspraak!
-                        </div>
-                    </div>
+                        </div>-->
+                    
+                 </div>   
                 <!-- /HEADLINES -->
-                <div class="col-main">
+                <div class="">
                     <?php // echo $this->getChildHtml('global_messages') ?>
                     <?php //echo $this->getChildHtml('content') ?>
                 </div>
             </div>
-        </div>
+        
         <?php echo $this->getChildHtml('footer_before') ?>
+        <div class="footer-home">
         <?php echo $this->getChildHtml('footer') ?>
+        </div>
         <?php echo $this->getChildHtml('global_cookie_notice') ?>
         <?php echo $this->getChildHtml('before_body_end') ?>
     </div>

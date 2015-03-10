@@ -29,44 +29,70 @@
     <div class="footer">
 
     	<div class="u-gridContainer">
-    		<div class="logo-bottom">
-				<img src="<?php echo $this->getSkinUrl('images/logo-white.png'); ?>"/>
+    		<div style="position:relative;" class="u-girdRow">
+	    		<div class="logo-bottom">
+					<img src="<?php echo $this->getSkinUrl('images/logo-white.png'); ?>"/>
+				</div>
+				<div class="verkrijgbaar-bij">
+					<p>O.A. VERKRIJGBAAR BIJ:</p>
+					<a href="http://www.foox.nl/" style="float:left;"><img src="<?php echo $this->getSkinUrl('images/foox.png'); ?>"/></a>
+					<a href="http://www.lekkerland.nl/" style="float:left;"><img src="<?php echo $this->getSkinUrl('images/lekker.png'); ?>"/></a>
+					<a href="https://www.sligro.nl/" style="float:left;"><img src="<?php echo $this->getSkinUrl('images/sligro.png'); ?>"/></a>
+				</div>
 			</div>
-        <?php // echo $this->getChildHtml() ?>
-        <!-- <address class="copyright"><?php echo $this->getCopyright() ?></address> -->
+	        <?php // echo $this->getChildHtml() ?>
+	        <!-- <address class="copyright"><?php echo $this->getCopyright() ?></address> -->
+	        <div class="u-girdRow">
+		        <div class="u-gridCol3">
+		        	<div class="footer-b"><b>ADRESGEGEVENS</b></div>
+		        	<ul>	
+		        		<li>Boudroz International BV</li>
+		        		<li>Postbus 56739</li>
+		        		<li>1040 AS Amsterdam</li>
+		        		<li>Importeur BENELUX</li>
+		        	</ul>
+		        </div>
+		        <div class="u-gridCol3">
+		        	<div class="footer-b"><b>CONTACT</b></div>
+		        	<p>
+		        		<a href="mailto:info@waterandwhatuneed.com">
 
-	        <div class="u-gridCol2">
-	        	<b>ADRESGEGEVENS</b>
-	        	<ul>	
-	        		<li>Boudroz International BV</li>
-	        		<li>Postbus 56739</li>
-	        		<li>1040 AS Amsterdam</li>
-	        		<li>Importeur BENELUX</li>
-	        	</ul>
-	        </div>
-	        <div class="u-gridCol3">
-	        	<b>CONTACT</b>
-	        	<ul>	
-	        		<li>info@waterandwhatuneed.com</li>
-	        		<li>+31(0)6 3423 0498</li>
-	        	</ul>
-	        </div>
-	        <div class="u-gridCol2">
-	        	<b>SOCIAL MEDIA</b>
-	        </div>
-	        <div class="u-gridCol2">
-	        	<b>ONZE APP</b>
-	        	<img src="<?php echo $this->getSkinUrl('images/playstore.png'); ?>"/>
-	        </div>
-	        <div class="u-gridCol3">
-	        	<b>SITEMAP</b>
-	        </div>
-	        
+		        			<div style="float:left; margin-right:10px;">
+		        				<img src="<?php echo $this->getSkinUrl('images/mail-icon-bottom.png'); ?>"/>
+		        			</div>
+		        			<div style="float:left;">info@waterandwhatuneed.com</div>
+
+		        		</a>
+		        		<a href="/contact">
+			        		<div style="float:left; margin-right:10px;">
+				        		<img src="<?php echo $this->getSkinUrl('images/tel-icon-bottom.png'); ?>"/>
+				        	</div>
+			        		<div style="float:left;">
+				        		+31(0)6 3423 0498
+				        	</div>
+			        	</a>
+		        	</p>	
+		        </div>
+		        <div class="u-gridCol2">
+		        	<div class="footer-b"><b>SOCIAL MEDIA</b></div>
+		        	<div class="socialmedia">
+		        		<img style="float:left; margin-right:10px;" src="<?php echo $this->getSkinUrl('images/facebook.png'); ?>"/>
+		        		<img style="float:left; margin-right:10px;" src="<?php echo $this->getSkinUrl('images/twitter.png'); ?>"/>
+		        	</div>
+		        </div>
+		        <div class="u-gridCol2">
+		        	<div class="footer-b"><b>ONZE APP</b></div>
+		        	<img src="<?php echo $this->getSkinUrl('images/playstore-white.png'); ?>"/> 
+		        </div>
+		        <div class="u-gridCol2">
+		        	<div class="footer-b"><b>SITEMAP</b></div>
+		        </div>
+		      </div>  
     	</div>
 	</div>
 	<div class="copyrighted">
 		<div class="footer-container">
-			&copy; Water&what u need - Alle rechten voorbehouden - Webshop en SEO door LokaalGevonden.nl
+			<p><b>&copy; WATER&</b>WHAT U NEED - Alle rechten voorbehouden - Webshop en SEO door <a href="www.lokaalgevonden.nl">LokaalGevonden.nl</a></p>  
 		</div>
 	</div>
 </div>
