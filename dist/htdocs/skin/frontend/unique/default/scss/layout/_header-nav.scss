@@ -126,6 +126,9 @@ nav {
     li {
         position: relative;
         border-right:1px solid black;
+        &:last-child{
+            border:0px;
+        }
     }
 
     li.level1 a {
@@ -281,4 +284,20 @@ nav {
     > ul {
         display: block;
     }
+}
+.level0{
+    z-index:999 !important;
+    text-align: left;
+    li{
+        border-right:none; 
+        a{
+            margin-left:15px; 
+        }
+    }
+    .level1{
+        width:200px; 
+    }
+}
+.view-all{
+    display:none; 
 }

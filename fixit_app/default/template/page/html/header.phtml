@@ -42,7 +42,12 @@
 <div class="top-bar">
 
     <div class="main-container">
-        <h3>+31 (0)6 3432 0498</h3> 
+        <h3>
+            <div style="float:left; margin-right:10px;">
+                <img src="<?php echo $this->getSkinUrl('images/tel-icon.png'); ?>"/>
+            </div>
+            <div style="float:left; margin-right:10px;">+31 (0)6 3432 0498<div>
+        </h3> 
         <div class="account-cart-wrapper">
             <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
                 <span class="icon"></span>
@@ -94,7 +99,7 @@
         <div id="header-nav" class="skip-content">
             <?php echo $this->getChildHtml('topMenu') ?>
         </div>
-        <img style="margin:0 auto;" src="<?php echo $this->getSkinUrl('images/bottles.png'); ?>"/>
+        
     </header>
 </div>
     
