@@ -59,14 +59,19 @@
                 </div>
 
                 <div class="price-info">
-                    <?php echo $this->getPriceHtml($_product); ?>
-                    <?php echo $this->getChildHtml('bundle_prices') ?>
-                    <?php echo $this->getTierPriceHtml() ?>
+					<?php if(Mage::getSingleton('customer/session')->isLoggedIn()) { ?>
+						<?php echo $this->getPriceHtml($_product); ?>
+						<?php echo $this->getChildHtml('bundle_prices') ?>
+						<?php echo $this->getTierPriceHtml() ?>
+					<?php } ?>
                 </div>
 
                 <div class="extra-info">
                     <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
-                    <?php echo $this->getChildHtml('product_type_availability'); ?>
+
+					<?php if(Mage::getSingleton('customer/session')->isLoggedIn()) : ?>
+						<?php echo $this->getChildHtml('product_type_availability'); ?>
+					<?php endif; ?>
                 </div>
 
                 <?php echo $this->getChildHtml('alert_urls') ?>
@@ -91,25 +96,27 @@
             <div class="add-to-cart-wrapper">
                 <?php echo $this->getChildHtml('product_type_data') ?>
                 <?php echo $this->getChildHtml('extrahint') ?>
-
-                <?php if (!$this->hasOptions()):?>
-                    <div class="add-to-box">
-                        <?php if($_product->isSaleable()): ?>
-                            <?php echo $this->getChildHtml('addtocart') ?>
-                            <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
-                                <span class="or"><?php echo $this->__('OR') ?></span>
-                            <?php endif; ?>
-                        <?php endif; ?>
-                        <?php echo $this->getChildHtml('addto') ?>
-                        <?php echo $this->getChildHtml('sharing') ?>
-                    </div>
-                    <?php echo $this->getChildHtml('extra_buttons') ?>
-                <?php elseif (!$_product->isSaleable()): ?>
-                    <div class="add-to-box">
-                        <?php echo $this->getChildHtml('addto') ?>
-                        <?php echo $this->getChildHtml('sharing') ?>
-                    </div>
-                <?php endif; ?>
+				<?php if(Mage::getSingleton('customer/session')->isLoggedIn()) : ?>
+					<?php if (!$this->hasOptions()):?>
+						
+						<div class="add-to-box">
+							<?php if($_product->isSaleable()): ?>
+								<?php echo $this->getChildHtml('addtocart') ?>
+								<?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+									<span class="or"><?php echo $this->__('OR') ?></span>
+								<?php endif; ?>
+							<?php endif; ?>
+							<?php echo $this->getChildHtml('addto') ?>
+							<?php echo $this->getChildHtml('sharing') ?>
+						</div>
+						<?php echo $this->getChildHtml('extra_buttons') ?>
+					<?php elseif (!$_product->isSaleable()): ?>
+						<div class="add-to-box u-cf">
+							<?php echo $this->getChildHtml('addto') ?>
+							<?php echo $this->getChildHtml('sharing') ?>
+						</div>
+					<?php endif; ?>
+				<?php endif; ?>
             </div>
 
             <?php echo $this->getChildHtml('related_products') ?>

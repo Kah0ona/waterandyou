@@ -2923,7 +2923,11 @@ body {
 }
 
 .page-header-container {
-  position: relative;
+  /* position: relative; */
+}
+
+#header-account {
+  z-index: 2000;
 }
 
 .header-language-container,

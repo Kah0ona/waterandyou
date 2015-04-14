@@ -39,6 +39,7 @@
     }
 ?>
 
+<?php if(Mage::getSingleton('customer/session')->isLoggedIn()) { ?>
 <a href="<?php echo $this->helper('checkout/cart')->getCartUrl(); ?>" data-target-element="#header-cart" class="skip-link skip-cart <?php if($_cartQty <= 0): ?> no-count<?php endif; ?>">
     <span class="icon"></span>
     <span class="label"><?php echo $this->__('Winkelwagen'); ?></span>
@@ -48,3 +49,4 @@
 <div id="header-cart" class="block block-cart skip-content">
     <?php echo $this->getChildHtml('minicart_content');?>
 </div>
+<?php } ?>

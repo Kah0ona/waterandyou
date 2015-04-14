@@ -41,8 +41,12 @@
         text-align: center;
     }
 
-    .page-header-container {
-        position: relative;
+    .page-header-container {  
+       /* position: relative; */
+    }
+
+    #header-account {
+        z-index:2000;
     }
 
 }
