@@ -1,0 +1,66 @@
+.bottle-animate{
+	position:absolute; 
+	z-index:99; 
+	margin-left:150px;
+	img{
+		width:200px;   
+	}
+}
+.trans-white{
+	width:40% !important; 
+	background:rgba(255, 255, 255, 0.7); 
+	border-radius:15px; 
+	z-index:9999999999;
+	position:relative; 
+	margin-left:-5%;  
+	padding:20px;
+	ul{
+		list-style-type: disc;
+		list-style-position: inside;  
+	}
+}
+	strong{
+		
+		font-family: 'Arial Black';
+	}
+	h2{
+		font-family: arial; 
+		font-size:25px;
+		color:black;
+	}
+.tab_content{
+	.u-gridCol4{ 
+		
+	}
+	.col-detail{
+		width:29%;
+		//background:rgba(255, 255, 255, 0.7);
+	}
+}
+.menu-hover-water{
+	width:232px;
+	height:50px;
+	background-image:url(../images/menu-hover.png);
+	
+	&:hover{
+	background-position:0px -76px;	
+	}  
+	&:active{
+	background-position:0px -76px;	
+	}
+}
+.vit-cont{
+	margin-top:20px;
+}
+.round-vit{
+	background-image:url(../images/bubble.png); 
+	background-size:100%;  
+	border-radius:25px;
+	width:120px;
+	height:120px;
+	text-align:center; 
+	float:left;
+	h3{
+		line-height: 6 !important;
+	}
+}

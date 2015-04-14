@@ -142,6 +142,9 @@ h6, .h6 { @include h6; }
 .page-title{
     h1{
         text-align:left !important;
+        //font-family: 'Arial Black'; 
+        //color: black;
+        background:rgba(255, 255, 255, 0.7);
     }
 }
 /* -------------------------------------------- *
@@ -579,6 +582,7 @@ a.button:hover {
 .breadcrumbs {
     overflow: hidden;
     margin: -15px 0 15px;
+    background:rgba(255, 255, 255, 0.7);
 }
 
 .breadcrumbs li {
