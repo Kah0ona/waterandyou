@@ -40,12 +40,17 @@
 
 <head>
 <?php echo $this->getChildHtml('head') ?>
+<script src="<?php echo $this->getSkinUrl('js/bubble.js'); ?>" type="text/javascript"></script>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
+
 <div class="wrapper">
+    
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
+        <div class="bubbles"></div>
+    <a class="bubble-toggle" href="#">Bubbles Off</a>
         <?php echo $this->getChildHtml('header') ?>
         <div class="main-container col3-layout">
             <div class="main">

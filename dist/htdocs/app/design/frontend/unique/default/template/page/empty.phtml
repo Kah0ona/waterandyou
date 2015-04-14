@@ -39,15 +39,348 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
 
 <head>
-    <?php echo $this->getChildHtml('head') ?>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="<?php echo $this->getSkinUrl('js/bars.js'); ?>" type="text/javascript"></script> 
+	<script src="<?php echo $this->getSkinUrl('js/bubble.js'); ?>" type="text/javascript"></script>
 </head>
-<body class="page-empty <?php echo $this->getBodyClass()?$this->getBodyClass():'' ?>">
-    <div>
+
+<?php echo $this->getChildHtml('head') ?>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page" stlye="backgorund:none;">
+    	<div class="bubbles"></div>
+    <a class="bubble-toggle" href="#">Bubbles Off</a>
+        <?php echo $this->getChildHtml('header') ?> 
+        
+        <div class="u-gridContainer" style="max-width:120em !important;">
+        	<!--<div class="menu-hover-water"></div>-->
+        	<div class="u-gridContainer">
+        		    <ul class="tabs">
+					  <li class="active" rel="tab1"><h2><strong>WATER&</strong>FRESH</h2></li>
+					  <li rel="tab2"><h2><strong>WATER&</strong>ENERGY</h2></li>
+					  <li rel="tab3"><h2><strong>WATER&</strong>EASY</h2></li>
+					  <li rel="tab4"><h2><strong>WATER&</strong>FREE</h2></li>
+					</ul>
+        	</div>
+
+        	<!--tab 1 -->
+        	<div class="u-gridRow tab_content" id="tab1" >
+	        	<div class="u-gridCol4 col-detail" style="position:relative;">
+	        		<p>.</p>
+		        	<div class="expandOpen bottle-animate"> 
+		        		 <img src="<?php echo $this->getSkinUrl('images/bottle-animate.png'); ?>"/> 
+		        	</div>
+		        	<div class="u-gridCol4 fadeIn">
+		        		<img src="<?php echo $this->getSkinUrl('images/water_splash-2.png'); ?>"/>
+		        	</div>
+				</div> 
+	        	<div class="u-gridCol4 slideLeft trans-white"> 
+	        		<h2><strong>WATER&</strong>FRESH</h2>
+	        		<div class="pullDown">
+	        			<p>Iedereen kent het wel: je hebt hard gewerkt, te veel gedronken de vorige avond of flink gesport. Activiteiten waar je compleet uitgeput van kan raken. Drink dan ‘Water&Fresh’ en laat je verrassen door de frisheid van munt en limoen. Die verkoelende douche is niet meer nodig!
+                        <br><br>
+                        <b>Panax ginseng</b> is een wortel uit de klimopfamilie Araliaceae en heeft zijn oorsprong in China en Korea. Ginseng zou geneeskrachtige eigenschappen bevatten, maar heeft vooral een heerlijk aromatische smaak.
+                        <br><br>
+                        <b>Kalium</b> is een belangrijk mineraal dat onder andere de zenuwprikkelgeleiding en de bloeddruk reguleert.
+	        			</p><br>
+	        		</div>
+		            
+	        	</div>
+	            <div class="bar-container slideLeft u-gridCol4 col-detail">
+	            	<div class="pullDown ">
+		                <h2><strong>WATER&</strong>FRESH Bevat</h2> 
+		            </div>
+	                <div class="bar-header bar"><b>Voedingswaarden</b></div>
+
+	                <div class="red bar">
+	                    <div class="bar-type"><p>Energie</p></div>
+	                    <div class="bar-value"> <p>19.5</p></div>
+	                    <div class="bar-info"><p>Kcal</p></div>
+	                </div>
+	                <div class="yellow bar">
+	                    <div class="bar-type"><p>Koolhydraten</p></div>
+	                    <div class="bar-value"> <p>4.9</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="green bar">
+	                    <div class="bar-type"><p>Protiene</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="light-blue bar">
+	                    <div class="bar-type"><p>Vet</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="blue bar">
+	                    <div class="bar-type"><p>Sodium</p></div>
+	                    <div class="bar-value"> <p>2</p></div>
+	                    <div class="bar-info"><p>mg</p></div>
+	                </div>
+	                <h2>&Vitamine</h2>
+	                <div class="vit-cont">
+						<div class="round-vit hatch"><h3>B3</h3></div>
+						<div class="round-vit hatch"><h3>B5</h3></div>
+						<div class="round-vit hatch"><h3>B6</h3></div>
+						<div class="round-vit hatch"><h3>B12</h3></div>
+						<div class="round-vit hatch"><h3>C</h3></div>
+						<div class="round-vit hatch"><h3>E</h3></div>
+	                </div>
+	                	
+	                
+	            </div> 
+        	</div>
+        	<!--einde tab-->
+        	        	<!--tab 2 -->
+        	<div class="u-gridRow tab_content" id="tab2" >
+	        	<div class="u-gridCol4 col-detail" style="position:relative;">
+	        		<p>.</p>
+		        	<div class="expandOpen bottle-animate"> 
+		        		 <img src="<?php echo $this->getSkinUrl('images/bottle-animate.png'); ?>"/>
+		        	</div>
+		        	<div class="u-gridCol4 fadeIn">
+		        		<img src="<?php echo $this->getSkinUrl('images/water_splash-2.png'); ?>"/>
+		        	</div>
+				</div>
+	        	<div class="u-gridCol4 slideLeft trans-white"> 
+	        		<h2><strong>WATER&</strong>ENERGY</h2>
+	        		<div class="pullDown">
+	        			<p>
+	        				Op sommige dagen kun je je bed niet uitkomen en houd je het liefst een winterslaap.Wanneer energie ver te zoeken is, dan is het tijd voor ‘WATER& ENERGY’. Slechts een paar slokken en je bent weer opgeladen. Klaar voor een nieuwe dag!
+	        				<br><br>
+							<b>Panax ginseng</b> is een wortel uit de klimopfamilie Araliaceae en heeft zijn oorsprong in China en Korea. Ginseng zou geneeskrachtige eigenschappen bevatten, maar heeft vooral een heerlijk aromatische smaak.
+							<br><br>
+							<b>Guaraná </b>is een besje afkomstig van een klimplant uit de Sapindaceae familie. Deze groeit in het Amazonebekken, vooral in Brazilië. Het zaadje afkomstig uit de bessen bevat natuurlijke cafeïne, maar in een veel grotere concentratie dan wij gewend zijn uit koffie en thee. Elk zaadje bevat ongeveer vijf keer zoveel cafeïne als een koffieboon.
+	        			</p>
+	        			<br>
+	        			
+	        		</div>
+		            
+	        	</div>
+	            <div class="bar-container slideLeft u-gridCol4 col-detail">
+	            	<div class="pullDown ">
+		                <h2><strong>WATER&</strong>ENERGY Bevat</h2> 
+		            </div>
+	                <div class="bar-header bar"><b>Voedingswaarden</b></div>
+
+	                <div class="red bar">
+	                    <div class="bar-type"><p>Energie</p></div>
+	                    <div class="bar-value"> <p>19.5</p></div>
+	                    <div class="bar-info"><p>Kcal</p></div>
+	                </div>
+	                <div class="yellow bar">
+	                    <div class="bar-type"><p>Koolhydraten</p></div>
+	                    <div class="bar-value"> <p>4.9</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="green bar">
+	                    <div class="bar-type"><p>Protiene</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="light-blue bar">
+	                    <div class="bar-type"><p>Vet</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="blue bar">
+	                    <div class="bar-type"><p>Sodium</p></div>
+	                    <div class="bar-value"> <p>2</p></div>
+	                    <div class="bar-info"><p>mg</p></div>
+	                </div>
+	            </div> 
+        	</div>
+        	<!--einde tab-->
+        	        	<!--tab 3 -->
+        	<div class="u-gridRow tab_content" id="tab3" >
+	        	<div class="u-gridCol4 col-detail" style="position:relative;">
+	        		<p>.</p>
+		        	<div class="expandOpen bottle-animate"> 
+		        		 <img src="<?php echo $this->getSkinUrl('images/bottle-animate.png'); ?>"/>
+		        	</div>
+		        	<div class="u-gridCol4 fadeIn">
+		        		<img src="<?php echo $this->getSkinUrl('images/water_splash-2.png'); ?>"/>
+		        	</div>
+				</div>
+	        	<div class="u-gridCol4 slideLeft trans-white"> 
+	        		<h2><strong>WATER&</strong>EASY</h2>
+	        		<div class="pullDown">
+	        			<p>
+	        				Soms kan je het gevoel hebben dat het gewicht van de hele wereld op je schouders drukt. Werk, school, familie en relaties kunnen heel wat stress veroorzaken. Je loopt jezelf gemakkelijk voorbij om te voldoen aan alle verwachtingen. Tijd voor pauze! Drink ‘WATER& EASY’ en ontspan.
+	        				<br><br>
+							Sinds jaar en dag gebruiken koks en apothekers het kruid rozemarijn. Dit sterk aromatische houtachtige kruid is heerlijk in allerlei gerechten. Bovendien zou rozemarijn het geheugen versterken en een heilzame werking hebben als schoonheidsmiddel.
+							<br><br>
+							<b>Kamille</b> is een van de oudste geneeskruiden en was al in de voorchristelijke tijd bekend. Van kamille wordt ook kruidenthee gemaakt. Als je de heerlijke zoete honingachtige geur ruikt, dan begrijp je wel waarom.
+							<br><br>
+							<b>Hibiscus</b> is een uitbundig kleurige bloem en wordt over de hele wereld gebruikt om thee van te maken. Het bevat veel vitamine C en mineralen en staat bekend om haar genezende functie.
+							<br><br>
+							<b>Lavendel</b> heeft een frisse en zoete geur; de Romeinen en Grieken gebruikten het dan ook al als baadmiddel en luchtverfrisser. Het kruid zou een verzachtende en ontspannende werking hebben. Tegenwoordig zijn er ook tal van zoete- en hartige recepten waarin lavendel een bijzonder ingrediënt is.
+							<br><br>
+							<b>Rozen</b> hebben een heerlijk zoet aroma en worden al eeuwen gebruikt vanwege haar schoonheid en werkzaamheid. Nog steeds zijn rozen een veel gebruikt ingrediënt in gezondheidsproducten, schoonheidsmiddelen en culinaire recepten.
+	        			</p>
+	        		</div>
+		            
+	        	</div>
+	            <div class="bar-container slideLeft u-gridCol4 col-detail">
+	            	<div class="pullDown ">
+		                <h2><strong>WATER&</strong>EASY Bevat</h2> 
+		            </div>
+	                <div class="bar-header bar"><b>Voedingswaarden</b></div>
+
+	                <div class="red bar">
+	                    <div class="bar-type"><p>Energie</p></div>
+	                    <div class="bar-value"> <p>19.5</p></div>
+	                    <div class="bar-info"><p>Kcal</p></div>
+	                </div>
+	                <div class="yellow bar">
+	                    <div class="bar-type"><p>Koolhydraten</p></div>
+	                    <div class="bar-value"> <p>4.9</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="green bar">
+	                    <div class="bar-type"><p>Protiene</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="light-blue bar">
+	                    <div class="bar-type"><p>Vet</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="blue bar">
+	                    <div class="bar-type"><p>Sodium</p></div>
+	                    <div class="bar-value"> <p>2</p></div>
+	                    <div class="bar-info"><p>mg</p></div>
+	                </div>
+	            </div> 
+        	</div>
+        	<!--einde tab-->
+        	        	<!--tab 4 -->
+        	<div class="u-gridRow tab_content" id="tab4" >
+	        	<div class="u-gridCol4 col-detail" style="position:relative;">
+	        		<p>.</p>
+		        	<div class="expandOpen bottle-animate"> 
+		        		 <img src="<?php echo $this->getSkinUrl('images/bottle-animate.png'); ?>"/>
+		        	</div>
+		        	<div class="u-gridCol4 fadeIn">
+		        		<img src="<?php echo $this->getSkinUrl('images/water_splash-2.png'); ?>"/>
+		        	</div>
+				</div>
+	        	<div class="u-gridCol4 slideLeft trans-white"> 
+	        		<h2><strong>WATER&</strong>FREE</h2>
+	        		<div class="pullDown">
+	        			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sollicitudin a lectus non rutrum. Proin ac metus ut orci finibus tincidunt. Phasellus feugiat congue risus. Etiam vitae ex a diam malesuada malesuada sit amet luctus dui. Quisque sit amet gravida odio. Curabitur pretium et quam non faucibus. Duis ac justo quis ante scelerisque porttitor. Aliquam fringilla, libero vel posuere pulvinar, lorem justo facilisis massa, ut cursus lectus justo dapibus metus.
+	        			</p><br>
+	        			<ul>
+	        				<li>non faucibus</li>
+	        				<li>non faucibus</li>
+	        				<li>non faucibus</li>
+	        				<li>non faucibus</li>
+	        				<li>non faucibus</li>
+	        			</ul>
+	        		</div>
+		            
+	        	</div>
+	            <div class="bar-container slideLeft u-gridCol4 col-detail">
+	            	<div class="pullDown ">
+		                <h2><strong>WATER&</strong>FREE Bevat</h2> 
+		            </div>
+	                <div class="bar-header bar"><b>Voedingswaarden</b></div>
+
+	                <div class="red bar">
+	                    <div class="bar-type"><p>Energie</p></div>
+	                    <div class="bar-value"> <p>19.5</p></div>
+	                    <div class="bar-info"><p>Kcal</p></div>
+	                </div>
+	                <div class="yellow bar">
+	                    <div class="bar-type"><p>Koolhydraten</p></div>
+	                    <div class="bar-value"> <p>4.9</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="green bar">
+	                    <div class="bar-type"><p>Protiene</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="light-blue bar">
+	                    <div class="bar-type"><p>Vet</p></div>
+	                    <div class="bar-value"> <p>0</p></div>
+	                    <div class="bar-info"><p>Gram</p></div>
+	                </div>
+	                <div class="blue bar">
+	                    <div class="bar-type"><p>Sodium</p></div>
+	                    <div class="bar-value"> <p>2</p></div>
+	                    <div class="bar-info"><p>mg</p></div>
+	                </div>
+	            </div> 
+        	</div>
+        	<!--einde tab-->
+			<div class="u-gridRow">
+				<hr>
+				<div class="u-gridCol6">
+					<p>
+					<b>B12</b><br>
+					Vitamine B12 voorkomt een bepaalde vorm van bloedarmoede. Het is ook van belang voor een
+					goede weerstand. Daarnaast speelt het een rol bij de vorming van gezonde rode bloedcellen,
+					zorgt het voor een goede werking van het zenuwstelsel en draagt het bij aan de
+					energievoorziening. Verder speelt het een rol bij de stofwisseling van foliumzuur.
+					<br><br>
+					
+					<b>B5</b><br>
+					Vitamine B5 speelt een belangrijke rol bij de afbraak van eiwitten, vetten en koolhydraten. Het
+					draagt bij aan de voorziening van energie. Daarnaast is het van belang bij de vorming van een
+					aantal hormonen en zorgt het voor een goed functionerend zenuwstelsel.
+					<br><br>
+					<b>B6</b><br>
+					Vitamine B6 (pyridoxine) is belangrijk voor de weerstand en de spijsvertering. Daarnaast speelt
+					het een rol bij de vorming van rode bloedcellen. Het is van belang voor de energievoorziening.
+					Vitamine B6 zorgt verder voor een goede werking van het zenuwstelsel.
+					<br><br>
+					</p>
+				</div>
+				<div class="u-gridCol6">
+				<p>
+					<b>B3</b><br>
+					Vitamine B3 speelt een belangrijke rol bij de energievoorziening van cellen en bij de werking van
+					het zenuwstelsel. Ook is het van belang voor een gezonde huid.
+					<br><br>
+					
+					<b>C</b><br>
+					Vitamine C (ascorbinezuur), een in wateroplosbare vitamine, is in de eerste plaats belangrijk
+					voor een goede weerstand. Daarnaast zorgt het voor gezonde botten, tanden, huid en
+					bloedvaten. Het zorgt voor een goed functionerend zenuwstelsel en draagt bij aan de
+					energievoorziening. Verder is Vitamine C een antioxidant en beschermt het je lichaam samen
+					met vitamine E tegen vrije radicalen. Vrije radicalen spelen onder andere een rol bij
+					verouderingsprocessen. Ook bevordert vitamine C de opname van ijzer.
+					<br><br>
+					<b>E</b><br>
+					Vitamine E (tocoferol), een in vetoplosbare vitamine, speelt een rol bij de aanmaak van rode
+					bloedcellen en het in stand houden van spieren en andere weefsels. Ook is het belangrijk voor
+					de weerstand. Vitamine E is een antioxidant: het beschermt de cellen in het lichaam tegen vrije
+					radicalen.
+				</p>
+				</div>
+				
+			</div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top:100px;">
+	<?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+</div>
+   <!-- <div>waesdflsdhjgfsjhsdfjsdgfjhsdfgjkh
         <?php echo $this->getChildHtml('after_body_start') ?>
         <?php echo $this->getChildHtml('global_messages') ?>
         <?php echo $this->getChildHtml('content') ?>
         <?php echo $this->getChildHtml('before_body_end') ?>
         <?php echo $this->getAbsoluteFooter() ?>
-    </div>
+    </div>-->
+</div>
 </body>
 </html>
