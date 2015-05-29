@@ -47,18 +47,41 @@
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
-        <div class="main-container col2-left-layout">
+        <div class="main-container">
             <div class="main">
-                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="u-gridContainer"><?php echo $this->getChildHtml('breadcrumbs') ?></div>
+                
                 <?php // This left_first block will display above the main content on smaller viewports ?>
-                <?php if ($_leftContent = $this->getChildHtml('left_first')): ?>
+            <!--    <?php if ($_leftContent = $this->getChildHtml('left_first')): ?>
                 <div class="col-left sidebar col-left-first"><?php echo $_leftContent;   ?></div>
-                <?php endif; ?>
-                <div class="col-main">
-                    <?php echo $this->getChildHtml('global_messages') ?>
-                    <?php echo $this->getChildHtml('content') ?>
-                </div>
-                <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
+                <?php endif; ?>-->
+                
+                    <div class="u-gridContainer white-bg" style="margin:0px; margin-bottom:70px;">
+                        <div class="u-gridCol6">
+                            <?php echo $this->getChildHtml('global_messages') ?><br>
+                            <?php echo $this->getChildHtml('content') ?>
+                        </div>
+                        <div class="u-gridCol6"><br>
+                            <strong>Smaken</strong> 
+                            <p>
+                               <br>
+                            Het nieuwe merk ‘Water&’ brengt je zuivere waterdranken, maar met een innovatieve twist. Wat dacht je van de smaken
+                            verbena, limoen of lychee? Bovendien zijn deze heerlijke dorstlessers verrijkt met vitaminen en plantenextracten. Je kunt
+                            het zo gek niet bedenken, of lavendel, rozemarijn, ginseng en groene thee zijn toegevoegd om jou op elk moment van de
+                            dag te verrassen.
+                            Water& is op dit moment in drie smaken te verkrijgen:<br>
+                            · Water& Energy: Lychee en Watermeloen<br>
+                            · Water&Fresh: Munt en Limoen<br>
+                            · Water& Easy: Citroengras en Verbena<br><br>
+                             
+                            Binnenkort zal ook ‘Water& Free’ verkrijgbaar zijn in twee smaken: Perzik & Ananas en Appel.
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                
+                <!--<div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>-->
             </div>
         </div>
         <?php echo $this->getChildHtml('footer_before') ?>

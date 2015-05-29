@@ -26,6 +26,19 @@
 /* ============================================ *
  * Header
  * ============================================ */
+ .top-menu{
+    a{
+        font-size: 14px;
+        color: rgb(99, 99, 99);
+        text-decoration: none; 
+        &:hover{
+            color:#3399CC; 
+        }
+    }
+    .account-cart-wrapper{
+        a{line-height:42px;}
+    }
+ }
 .center{
     margin:0 auto;
     margin-top: 30px;

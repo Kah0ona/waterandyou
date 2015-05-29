@@ -6,6 +6,12 @@ jQuery(document).ready(function($){
 	);
 
 });
+jQuery(document).ready(function($){
+	$("a[href='#bottom']").click(function() {
+	  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+	  return false;
+	});
+});
 
 jQuery(document).ready(function($){
  // tabbed content
@@ -50,3 +56,22 @@ jQuery(document).ready(function($){
 
 
 });
+
+//--------------------- mini tabs
+
+jQuery(document).ready(function($){
+	$('.tabgroup > div').hide();
+	$('.tabgroup > div:first-of-type').show();
+	$('.mini-tabs a').click(function(e){
+	  e.preventDefault();
+	    var $this = $(this),
+	        tabgroup = '#'+$this.parents('.mini-tabs').data('tabgroup'),
+	        others = $this.closest('li').siblings().children('a'),
+	        target = $this.attr('href');
+	    others.removeClass('active');
+	    $this.addClass('active');
+	    $(tabgroup).children('div').hide();
+	    $(target).show();
+	  
+	})
+ });   

@@ -85,3 +85,12 @@ $('.bubble-toggle').click(function(){
 
 bubbles();
 });
+
+jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+  $('#preload').fadeOut('fast',function(){$(this).remove();});
+});
+
+});

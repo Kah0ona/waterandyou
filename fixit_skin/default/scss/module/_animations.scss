@@ -1134,35 +1134,38 @@ ul.tabs {
 	height: 32px;
 	width: 100%;
 	border-top:1px solid black;
+	background:none;
 }
 
 ul.tabs li {
 	float: left;
 	margin: 0;
 	width:25%;
-	cursor: pointer;
-	padding: 0px 21px;
-	height: 31px;
+	cursor: pointer; 
+	padding: 5px 21px;
+	height: 42px;
 	line-height: 31px;
-	background-color: #fff;
+	//background-color: #fff;
 	color: #fff;
 	overflow: hidden;
 	position: relative;
 	text-align:center;
+	border-radius:10px;
 }
 
 
 
 ul.tabs li:hover {
-	@include background-image(linear-gradient(to right, #fff, #c8e7fc, #c8e7fc, #fff));
+	//background:rgba(200, 231, 252, 0.8); 
+	@include background-image(linear-gradient(to right,  rgba(200, 231, 252, 0), white, white, rgba(200, 231, 252, 0) ));
 	color: #333;
-}
+} 
 
 ul.tabs li.active {
-	@include background-image(linear-gradient(to right, #fff, #c8e7fc, #c8e7fc, #fff)); 
+	@include background-image(linear-gradient(to right,  rgba(200, 231, 252, 0), white, white, white, rgba(200, 231, 252, 0) ));
 	color: #333;
 	display: block;
-}
+} 
 
 .tab_container {
 	border: 1px solid #333;

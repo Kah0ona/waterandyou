@@ -1,3 +1,8 @@
+.page-title{
+	h1{
+		color:#636363 !important;
+	}
+}
 .show-for-large{
 	display:block;
 }
@@ -72,19 +77,29 @@
  
  .product-tab-content .description {
  	display: none;
- }
+ 	p{
+ 		
+ 	}
+ } 
+.description-info{
+	margin-top:45px;
+}
 .description-text{
 	width:45%;
 	float:left; 
-	margin-right:20px;
-	margin-top:0px;
+	margin-right:20px; 
+	margin-top:45px;
+	p{
+		font-family: 'Opens Sans'; 
+		font-size: 14px !important; 
+	} 
 }
 .bottle-box{
 	background-color:#fff; 
 	border-radius:15px; 
 	margin-bottom:30px;
 	text-align:center;
-	font-family: arial;
+	font-family: 'Open Sans';
 	color:black;
 	padding:15px;
 	img{
@@ -96,13 +111,13 @@
 	}
 	a{
 		float:right;
-		font-family: arial;
+		font-family: 'Open Sans';
 		color:black;
 		cursor:pointer; 
 	}
 	p{
 		font-size:12px;
-		font-family: arial;
+		font-family: 'Open Sans';
 		margin-bottom:10px;
 	} 
 	h2{
@@ -151,13 +166,16 @@ img{
 	.home-thumb-small{
 		width:47%;
 	}
+	.cont-abso{
+		top:-770px;
+	}
 	.bottle-box{
 		height:370px;
 	}
 	.bubble-background{
-		height:1470px;
+		height:1300px;
 	}
-	
+	 
 	.show-for-small-2{
 		display:block;
 	}
@@ -170,7 +188,7 @@ img{
 }
 @media all and (max-width: 900px){
 	.bubble-background{ 
-		height:1370px;
+		height:1200px;
 	}
 }
 
@@ -189,20 +207,46 @@ img{
 	.home-thumb-small{
 		width:47%;
 	}
+	.nav-primary{
+	background:rgba(255, 255, 255, 0.9);
+	}
 }  
 @media all and (max-width: 700px){
 	.bubble-background{
-		height:1300px;
+		height:1100px;
 	}
-}
+	.white-curve{
+		background-size:104%;
+	}
+	.nav-primary {
+
+	    li {
+	        position: relative;
+	        border-right:0px;
+	        &:last-child{
+	            border:1px;
+	        }
+	    }
+
+	    li.level1 a {
+	        border-bottom: 1px solid $c-module-border;
+	    }
+	}
+} 
 @media all and (max-width: 600px){
 	.logo-bottom{
 		position: static; 
 	}
 }	
 @media all and (max-width: 500px){
-.home-thumb-small{
+	.home-thumb-small{
 		width:100%;
 	} 
-
+	.bubble-background{
+		height:2400px;
+	}
+	.cont-abso{
+		top:-754px;
+		margin-right:20px;
+	}
 }
