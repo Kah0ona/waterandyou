@@ -3926,6 +3926,11 @@ nav {
   display: block;
 }
 
+#nav .level0.nav-2,
+#nav .level0.nav-3 {
+  display: none;
+}
+
 .bubble-background {
   background-image: url(../images/waterbackground.jpg);
   width: 100%;
@@ -10801,7 +10806,32 @@ ul.tabs li.active {
 
 .page-header {
   position: relative;
-  z-index: 9999999999;
+  z-index: 995;
+}
+
+.logout-button {
+  float: none;
+  width: auto;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.logout-button {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 44px;
+  background: #FFFFFF;
+  color: #636363;
+  line-height: 42px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.registreerbutton {
+  width: auto !important;
 }
 
 .u-gridCol4.fadeIn img {

@@ -16,6 +16,15 @@
 	display:block; 
 }
 
+//productoverzicht hiden; een JavaScript toont het daarna wel weer.
+#nav .level0.nav-2,
+#nav .level0.nav-3
+{
+	display: none;
+}
+
+
+
 .bubble-background{
 	background-image: url(../images/waterbackground.jpg);  
 	width:100%;

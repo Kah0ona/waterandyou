@@ -49,17 +49,21 @@
             <div style="float:left; margin-right:10px;"><a href="tel:0634320498">+31 (0)6 3432 0498</a><div>
         </h3> 
         <div class="account-cart-wrapper">
-            <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
-                <span class="icon"></span>
-                <span class="label"><?php echo $this->__('Word Klant'); ?></span>
-                
-                 
-                    <a href="/customer/account/login/referer/aHR0cDovL3dhdGVyYW5keW91Lmxva2FhbGdldm9uZGVuLm5sLz9fX19TSUQ9VQ,,/" style="line-height:42px;">
-                    Inloggen
-                    </a>
-                
-            </a>
-
+			<?php if(Mage::getSingleton('customer/session')->isLoggedIn()) { ?>
+				<a href="/customer/account/logout/" class="logout-button">
+					<span class="icon"></span>
+					<span class="label">Uitloggen</span>
+				</a>
+			<?php } else { // guest ?>
+				<!-- <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account"> -->
+				<a href="/customer/account/create/" data-target-element="#header-account" class="logout-button registreerbutton">
+					<span class="icon"></span>
+					<span class="label"><?php echo $this->__('Word Klant'); ?></span>
+				</a>
+                <a href="/customer/account/login/referer/aHR0cDovL3dhdGVyYW5keW91Lmxva2FhbGdldm9uZGVuLm5sLz9fX19TSUQ9VQ,,/" class="logout-button" style="line-height:42px;">
+                   Inloggen
+                </a>
+			<?php } ?>
             <!-- Cart -->
 
             <div class="header-minicart">
