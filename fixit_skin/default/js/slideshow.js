@@ -41,4 +41,13 @@ $j(document).ready(function () {
             next: '.slideshow-next',
             fx: 'scrollHorz'
         });
+
+
+	if($j('.account-cart-wrapper a:nth-of-type(2)').size() > 0 && $j('.account-cart-wrapper a:nth-of-type(2)').html().trim() == 'Inloggen') {
+		$j('#nav .level0.nav-3').css('display','inline-block');
+	} else {
+		$j('#nav .level0.nav-2').css('display','inline-block');	
+	}
+
+
 });

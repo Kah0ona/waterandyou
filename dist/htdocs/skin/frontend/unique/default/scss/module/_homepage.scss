@@ -22,6 +22,7 @@
 .show-for-large-2{ 
 	display:block; 
 }
+<<<<<<< HEAD
 .input-box{
 	#comment{
 	max-width:100%;	
@@ -29,6 +30,18 @@
 	}
 	
 }
+=======
+
+//productoverzicht hiden; een JavaScript toont het daarna wel weer.
+#nav .level0.nav-2,
+#nav .level0.nav-3
+{
+	display: none;
+}
+
+
+
+>>>>>>> a3ad5300dedb3d8ebb0c16ee0fac2ba5b9782429
 .bubble-background{
 	background-image: url(../images/waterbackground.jpg);  
 	width:100%;

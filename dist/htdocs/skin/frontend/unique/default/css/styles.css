@@ -4578,9 +4578,15 @@ nav {
   display: block;
 }
 
+<<<<<<< HEAD
 .input-box #comment {
   max-width: 100%;
   height: 200px;
+=======
+#nav .level0.nav-2,
+#nav .level0.nav-3 {
+  display: none;
+>>>>>>> a3ad5300dedb3d8ebb0c16ee0fac2ba5b9782429
 }
 
 .bubble-background {
@@ -13099,7 +13105,32 @@ ul.tabs li.active {
 
 .page-header {
   position: relative;
-  z-index: 9999999999;
+  z-index: 995;
+}
+
+.logout-button {
+  float: none;
+  width: auto;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.logout-button {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 44px;
+  background: #FFFFFF;
+  color: #636363;
+  line-height: 42px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.registreerbutton {
+  width: auto !important;
 }
 
 .u-gridCol4.fadeIn img {
