@@ -302,6 +302,32 @@ body {
 
   }
 }
+.bar-container-2{
+  width:400px;
+  float:left; 
+  h4{
+    color:white;
+    line-height:3;
+    margin-left: 20px;
+  }
+  .red{
+    background:#f7573f;
+  } 
+  .yellow{
+    background:#feac0b;
+  }
+  .green{
+    background-color:#59c241;
+  }
+  .blue{
+    background:#61a3d3;
+    border-radius: 0px 0px 15px 15px; 
+  }
+  .light-blue{
+    background:#99caf5;
+
+  }
+}
 .bar-header{
   background:#3382bb;
   height:40px;

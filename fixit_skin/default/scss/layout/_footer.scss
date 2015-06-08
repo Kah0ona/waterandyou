@@ -66,6 +66,7 @@
     }
 }
 .footer {
+    margin-top:30px;
     position:relative;
     color:white;
     clear: both;
@@ -294,7 +295,10 @@
         }
     }
 }
-.footer-home{
+.footer-home{ 
+    .footer{
+        margin-top: 0px;
+    }
     .copyrighted{
     background-image: url(../images/waterbackground.jpg);
     text-align: center;

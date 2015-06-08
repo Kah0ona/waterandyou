@@ -50,23 +50,62 @@
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
         <div class="bubbles"></div>
-    <a class="bubble-toggle" href="#">Bubbles Off</a>
         <?php echo $this->getChildHtml('header') ?>
-        <div class="main-container col3-layout">
-            <div class="main">
-                <?php echo $this->getChildHtml('breadcrumbs') ?>
-                <div class="col-wrapper">
-                    <?php // This left_first block will display above the main content on smaller viewports ?>
-                    <?php if ($_leftContent = $this->getChildHtml('left_first')): ?>
-                        <div class="col-left sidebar col-left-first"><?php echo $_leftContent;   ?></div>
-                    <?php endif; ?>
-                    <div class="col-main">
-                        <?php echo $this->getChildHtml('global_messages') ?>
-                        <?php echo $this->getChildHtml('content') ?>
-                    </div>
-                    <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
-                </div>
-                <div class="col-right sidebar"><?php echo $this->getChildHtml('right') ?></div>
+        <div class="main-container">
+            <div class="">
+                <div class="u-gridContainer white-bg" style="max-width:98em !important;">
+                    <?php echo $this->getChildHtml('breadcrumbs') ?>
+                    
+                        <div class="col-wrapper">
+                            <div class="u-gridCol5 over-col1">
+                                <?php echo $this->getChildHtml('global_messages') ?> 
+                                <?php echo $this->getChildHtml('content') ?>
+                            </div>
+                            <div class="u-gridCol4 over-col2">
+                                <h2 style="font-size:18px; line-height:30px;">Smaken</h2>
+                                <p>
+                                    
+                                Het nieuwe merk WATER&WHATUNEED brengt je
+                                zuivere waterdranken, maar met een innovatieve twist.
+                                Wat dacht je van de smaken verbena, limoen of lychee?
+                                <br><br>
+                                Bovendien zijn deze heerlijke dorstlessers verrijkt met
+                                vitaminen en plantenextracten. Je kunt het zo gek niet
+                                bedenken, of lavendel, rozemarijn, ginseng en groene
+                                thee zijn toegevoegd om jou op elk moment van de dag
+                                te verrassen. WATER&WHATUNEED is op dit moment in
+                                drie smaken te verkrijgen:
+                                <br><br>
+                                <section style="font-size:15px; color:black;">
+                                    <strong>WATER&</strong>ENERGY Lychee en Watermeloen<br>
+                                    <strong>WATER&</strong>FRESH Munt en Limoen<br>
+                                    <strong>WATER&</strong>EASY Citroengras en Verbena<br>
+                                </section>
+                               
+                                </p>
+                                <div style="margin-top:20px;">
+                                    <img style="width:30%; float:left;" src="<?php echo $this->getSkinUrl('images/4-diet.jpg'); ?>"/>
+                                    <p style="width:60%; float:left; color:black;"><br>Binnekort zal ook <strong>WATER&</strong>FREE verkrijgbaar zijn in twee smaken: Perzik & Ananas en Appel.</p>
+                                </div> 
+                            </div>
+                            <div class="u-gridCol3 over-col3" style="margin-right:0px;">
+                                <iframe allowtransparency="true" src="http://www.facebook.com/connect/connect.php?id=1725664684238766&amp;connections=0&amp;stream=1" style="border: 1px; width: 107%; height: 478px; padding: 0px 0px 0px 15px;" scrolling="no"></iframe>
+                            </div>
+                            <div class="col-main">
+                                
+                            </div>
+                            
+                        </div>
+                    
+                <!--    
+                        <?php // This left_first block will display above the main content on smaller viewports ?>
+                            <?php if ($_leftContent = $this->getChildHtml('left_first')): ?>
+                                <div class="col-left sidebar col-left-first"><?php echo $_leftContent;   ?></div>
+                            <?php endif; ?>
+
+                    <div class="col-right sidebar"><?php echo $this->getChildHtml('right') ?></div>
+                    <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>-->
+                </div>    
             </div>
         </div>
         <?php echo $this->getChildHtml('footer_before') ?>

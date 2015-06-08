@@ -1148,7 +1148,7 @@ a.button:hover {
  */
 .breadcrumbs {
   overflow: hidden;
-  margin: -15px 0 15px;
+  margin: -15px 0 30px;
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -3397,6 +3397,9 @@ body {
 /* ============================================ *
  * Header
  * ============================================ */
+.top-menu {
+  padding: 0px 20px;
+}
 .top-menu a {
   font-size: 14px;
   color: #636363;
@@ -3404,6 +3407,9 @@ body {
 }
 .top-menu a:hover {
   color: #3399CC;
+}
+.top-menu .account-cart-wrapper {
+  margin-right: 20px;
 }
 .top-menu .account-cart-wrapper a {
   line-height: 42px;
@@ -4315,6 +4321,7 @@ nav {
 }
 
 .footer {
+  margin-top: 30px;
   position: relative;
   color: white;
   clear: both;
@@ -4532,6 +4539,9 @@ nav {
   }
 }
 
+.footer-home .footer {
+  margin-top: 0px;
+}
 .footer-home .copyrighted {
   background-image: url(../images/waterbackground.jpg);
   text-align: center;
@@ -4544,7 +4554,12 @@ nav {
 }
 
 .page-title h1 {
-  color: #636363 !important;
+  color: black !important;
+  font-size: 20px;
+}
+
+.cms-page-view p {
+  font-style: normal !important;
 }
 
 .show-for-large {
@@ -4561,6 +4576,11 @@ nav {
 
 .show-for-large-2 {
   display: block;
+}
+
+.input-box #comment {
+  max-width: 100%;
+  height: 200px;
 }
 
 .bubble-background {
@@ -4638,8 +4658,35 @@ nav {
   margin-top: 45px;
 }
 .description-text p {
-  font-family: 'Opens Sans';
   font-size: 14px !important;
+}
+
+.tab-li-1.active-tab h2 {
+  color: #108246;
+}
+.tab-li-1.active-tab strong {
+  color: black;
+}
+
+.tab-li-2.active-tab h2 {
+  color: #F6342A;
+}
+.tab-li-2.active-tab strong {
+  color: black;
+}
+
+.tab-li-3.active-tab h2 {
+  color: #A82527;
+}
+.tab-li-3.active-tab strong {
+  color: black;
+}
+
+.tab-li-4.active-tab h2 {
+  color: #8DF13F;
+}
+.tab-li-4.active-tab strong {
+  color: black;
 }
 
 .bottle-box, .bottle-box-head, .bottle-box-content {
@@ -4647,7 +4694,6 @@ nav {
   border-radius: 15px;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Open Sans';
   color: black;
   padding: 15px;
 }
@@ -4659,19 +4705,21 @@ nav {
 }
 .bottle-box a, .bottle-box-head a, .bottle-box-content a {
   float: right;
-  font-family: 'Open Sans';
   color: black;
   cursor: pointer;
 }
 .bottle-box p, .bottle-box-head p, .bottle-box-content p {
   font-size: 12px;
-  font-family: 'Open Sans';
   margin-bottom: 10px;
 }
 .bottle-box h2, .bottle-box-head h2, .bottle-box-content h2 {
   font-family: arial;
   font-size: 25px;
   color: black;
+}
+
+.min-height {
+  min-height: 500px;
 }
 
 .bottle-box-head {
@@ -4747,6 +4795,24 @@ img {
   .bubble-background {
     height: 1200px;
   }
+
+  .over-col1 {
+    width: 47%;
+  }
+
+  .over-col2 {
+    width: 47%;
+  }
+  .over-col2 h2 {
+    line-height: 36px;
+  }
+
+  .over-col3 {
+    width: 100%;
+  }
+  .over-col3 iframe {
+    width: 100% !important;
+  }
 }
 @media all and (max-width: 870px) {
   .verkrijgbaar-bij {
@@ -4770,7 +4836,30 @@ img {
     background: rgba(255, 255, 255, 0.9);
   }
 }
+@media all and (max-width: 770px) {
+  .over-col3 {
+    margin-bottom: 60px;
+  }
+}
 @media all and (max-width: 700px) {
+  .over-col1 {
+    width: 100%;
+  }
+
+  #contact-bottle {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .over-col2 {
+    width: 100%;
+  }
+
+  .over-col3 {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
   .bubble-background {
     height: 1100px;
   }
@@ -11740,6 +11829,32 @@ body {
   background: #99caf5;
 }
 
+.bar-container-2 {
+  width: 400px;
+  float: left;
+}
+.bar-container-2 h4 {
+  color: white;
+  line-height: 3;
+  margin-left: 20px;
+}
+.bar-container-2 .red {
+  background: #f7573f;
+}
+.bar-container-2 .yellow {
+  background: #feac0b;
+}
+.bar-container-2 .green {
+  background-color: #59c241;
+}
+.bar-container-2 .blue {
+  background: #61a3d3;
+  border-radius: 0px 0px 15px 15px;
+}
+.bar-container-2 .light-blue {
+  background: #99caf5;
+}
+
 .bar-header {
   background: #3382bb;
   height: 40px;
@@ -11794,6 +11909,10 @@ justin@justinaguilar.com
 slideDown
 ==============================================
 */
+.cms-page-view p {
+  font-style: normal !important;
+}
+
 .slideDown {
   animation-name: slideDown;
   -webkit-animation-name: slideDown;
@@ -12874,6 +12993,34 @@ ul.tabs li.active {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
 }
 
+.tab-li-1.active h2 {
+  color: #108246;
+}
+.tab-li-1.active strong {
+  color: black;
+}
+
+.tab-li-2.active h2 {
+  color: #F6342A;
+}
+.tab-li-2.active strong {
+  color: black;
+}
+
+.tab-li-3.active h2 {
+  color: #A82527;
+}
+.tab-li-3.active strong {
+  color: black;
+}
+
+.tab-li-4.active h2 {
+  color: #8DF13F;
+}
+.tab-li-4.active strong {
+  color: black;
+}
+
 .mini-tabs-container ul {
   background: rgba(255, 255, 255, 0.9);
 }
@@ -12906,7 +13053,7 @@ ul.tabs li.active {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 10px 0;
   font-family: 'Arial Black', 'Open Sans';
   font-size: 20px;
   color: black;
@@ -12930,17 +13077,19 @@ ul.tabs li.active {
 }
 
 .vitamine-head {
-  text-align: center;
+  text-align: left;
   background: #c8e7fc;
   border-radius: 15px 15px 0px 0px;
   padding: 10px;
   margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .bottle-animate {
   position: absolute;
   z-index: 99;
-  margin-left: 120px;
+  margin-left: 190px;
 }
 .bottle-animate img {
   width: 300px;
@@ -12955,18 +13104,19 @@ ul.tabs li.active {
 
 .u-gridCol4.fadeIn img {
   margin-top: -37px;
-  margin-left: -36px;
+  margin-left: 36px;
   width: 525px;
 }
 
 .trans-white {
-  width: 40% !important;
+  width: 34% !important;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
   z-index: 99;
   position: relative;
   margin-left: -5%;
   padding: 20px;
+  padding-top: 38px;
 }
 .trans-white ul {
   list-style-type: disc;
@@ -12974,6 +13124,7 @@ ul.tabs li.active {
 }
 
 strong {
+  color: black;
   font-family: 'Arial Black', 'Open Sans';
 }
 
@@ -12984,8 +13135,11 @@ h2 {
 }
 
 .tab_content .col-detail {
-  width: 29%;
+  width: 33%;
   margin-top: 20px;
+}
+.tab_content .bar-container {
+  width: 30%;
 }
 
 .menu-hover-water {
@@ -13052,6 +13206,30 @@ h2 {
   background: rgba(255, 255, 255, 0.7);
 }
 
+@media all and (max-width: 1400px) {
+  .bottle-animate {
+    margin-left: 170px;
+  }
+  .bottle-animate img {
+    margin-left: -100px;
+  }
+
+  .fadeIn img {
+    margin-left: -14px !important;
+  }
+
+  .trans-white {
+    width: 36% !important;
+  }
+
+  .bar-container {
+    width: 31% !important;
+  }
+
+  .u-gridRow .col-detail:first-of-type {
+    width: 32%;
+  }
+}
 @media all and (max-width: 1300px) {
   .bottle-animate {
     margin-left: 80px;
@@ -13059,6 +13237,44 @@ h2 {
 
   .water-fles {
     margin-left: -85px;
+  }
+
+  .u-gridRow .col-detail:first-of-type {
+    width: 30%;
+  }
+
+  .trans-white {
+    width: 39% !important;
+  }
+
+  .bar-container {
+    width: 30% !important;
+  }
+}
+@media all and (max-width: 1250px) {
+  .trans-white {
+    width: 41% !important;
+  }
+
+  .bar-container {
+    width: 30% !important;
+  }
+
+  .u-gridRow .col-detail:first-of-type {
+    width: 29%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .trans-white {
+    width: 43% !important;
+  }
+
+  .bar-container {
+    width: 29% !important;
+  }
+
+  .u-gridRow .col-detail:first-of-type {
+    width: 28%;
   }
 }
 @media all and (max-width: 1126px) {

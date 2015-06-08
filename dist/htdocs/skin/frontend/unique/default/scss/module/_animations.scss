@@ -18,7 +18,12 @@ slideDown
 ==============================================
 */
 
-
+.cms-page-view{
+	p{
+		font-style:normal !important;
+	}
+	
+}
 .slideDown{
 	animation-name: slideDown;
 	-webkit-animation-name: slideDown;	

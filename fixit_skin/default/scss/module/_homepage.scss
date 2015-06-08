@@ -1,11 +1,18 @@
 .page-title{
 	h1{
-		color:#636363 !important;
+		color:black !important;
+		font-size: 20px; 
 	}
+}
+.cms-page-view{
+	p{
+		font-style:normal !important;
+	}
+	
 }
 .show-for-large{
 	display:block;
-}
+} 
 .show-for-small{
 	display:none;
 }
@@ -15,7 +22,13 @@
 .show-for-large-2{ 
 	display:block; 
 }
-
+.input-box{
+	#comment{
+	max-width:100%;	
+	height:200px; 
+	}
+	
+}
 .bubble-background{
 	background-image: url(../images/waterbackground.jpg);  
 	width:100%;
@@ -90,16 +103,47 @@
 	margin-right:20px; 
 	margin-top:45px;
 	p{
-		font-family: 'Opens Sans'; 
+		//font-family: 'Opens Sans'; 
 		font-size: 14px !important; 
 	} 
+}
+.tab-li-1.active-tab{
+	h2{
+		color:#108246;
+	}
+	strong{
+		color:black; 
+	}
+}
+.tab-li-2.active-tab{
+	h2{
+		color:#F6342A;
+	}
+	strong{
+		color:black;
+	}
+}
+.tab-li-3.active-tab{
+	h2{
+		color:#A82527;
+	}
+	strong{
+		color:black;
+	}
+}
+.tab-li-4.active-tab{
+	h2{
+		color:#8DF13F;
+	}
+	strong{
+		color:black;
+	}
 }
 .bottle-box{
 	background-color:#fff; 
 	border-radius:15px; 
 	margin-bottom:30px;
 	text-align:center;
-	font-family: 'Open Sans';
 	color:black;
 	padding:15px;
 	img{
@@ -111,20 +155,23 @@
 	}
 	a{
 		float:right;
-		font-family: 'Open Sans';
+		//font-family: 'Open Sans';
 		color:black;
 		cursor:pointer; 
 	}
 	p{
 		font-size:12px;
-		font-family: 'Open Sans';
-		margin-bottom:10px;
+		//font-family: 'Open Sans' !important;
+		margin-bottom:10px; 
 	} 
 	h2{
 		font-family: arial; 
 		font-size:25px;
 		color:black;
 	}
+}
+.min-height{
+	min-height:500px;
 }
 .bottle-box-head{
 	@extend .bottle-box;
@@ -190,6 +237,21 @@ img{
 	.bubble-background{ 
 		height:1200px;
 	}
+	.over-col1{
+		width:47%;
+	}
+	.over-col2{
+		width:47%;
+		h2{
+			line-height:36px;
+		}	
+	}
+	.over-col3{
+		width:100%;
+		iframe{ 
+			width:100% !important; 
+		}
+	}
 }
 
 @media all and (max-width: 870px){
@@ -210,8 +272,27 @@ img{
 	.nav-primary{
 	background:rgba(255, 255, 255, 0.9);
 	}
+}
+@media all and (max-width: 770px){
+	.over-col3{
+		margin-bottom:60px;
+	}
 }  
 @media all and (max-width: 700px){
+	.over-col1{
+		width:100%;
+	}
+	#contact-bottle{
+			margin-left:0px; 
+			width:100%;
+	}
+	.over-col2{
+		width:100%;
+	}
+	.over-col3{
+		width:100%;
+		margin-bottom:60px;
+	}
 	.bubble-background{
 		height:1100px;
 	}

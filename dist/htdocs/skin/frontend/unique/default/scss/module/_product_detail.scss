@@ -1,9 +1,40 @@
 .top-tabs{
 	//background:rgba(200, 231, 252, 0.8); 
 	border-radius:15px;
-	@include background-image(linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5),   rgba(200, 231, 252, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)));}
-
-
+	@include background-image(linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5), rgba(200, 231, 252, 0.5),   rgba(200, 231, 252, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)));
+}
+.tab-li-1.active{
+	h2{
+		color:#108246;
+	}
+	strong{
+		color:black;
+	}
+}
+.tab-li-2.active{
+	h2{
+		color:#F6342A;
+	}
+	strong{
+		color:black;
+	}
+}
+.tab-li-3.active{
+	h2{
+		color:#A82527;
+	}
+	strong{
+		color:black;
+	}
+}
+.tab-li-4.active{
+	h2{
+		color:#8DF13F;
+	}
+	strong{
+		color:black;
+	}
+}
 
 //mini tabs!!!!
 .mini-tabs-container{
@@ -41,7 +72,7 @@
 	    text-decoration:none;
 	    text-transform:uppercase;  
 	    
-	    padding:20px 0;
+	    padding:10px 0; 
 	    font-family: 'Arial Black', 'Open Sans';
 	    //border-bottom:1px solid #888;
 	    font-size: 20px;
@@ -74,19 +105,21 @@
 }
 //-------------------------
 .vitamine-head{
-	text-align:center;
+	text-align:left;
 	background:rgba(200, 231, 252, 1);
 	border-radius:15px 15px 0px 0px;
 	padding:10px;
 	margin-bottom:0px; 
+	font-size:16px;
+	font-weight:bold;
 }
 .bottle-animate{
 	position:absolute; 
 	z-index:99; 
-	margin-left:120px;
+	margin-left:190px;
 	img{
 		width:300px; 
-		margin-left:-60px; 
+		margin-left:-60px;
 		margin-top: -38px;    
 	}
 }
@@ -96,24 +129,25 @@
 } 
 .u-gridCol4.fadeIn img{
 	margin-top:-37px; 
-	margin-left:-36px;  
+	margin-left:36px;  
 	width:525px;
 } 
 .trans-white{
-	width:40% !important;
+	width:34% !important;
 	background:rgba(255, 255, 255, 0.7); 
 	border-radius:15px; 
-	z-index:99; 
+	z-index:99;  
 	position:relative; 
 	margin-left:-5%;  
 	padding:20px;
+	padding-top:38px; 
 	ul{
 		list-style-type: disc;
 		list-style-position: inside;  
 	}
 }
 	strong{
-		
+		color:black;
 		font-family: 'Arial Black', 'Open Sans';
 	}
 	h2{
@@ -126,11 +160,15 @@
 		
 	}
 	.col-detail{
-		width:29%;
+		width:33%; 
 		margin-top: 20px; 
 		//background:rgba(255, 255, 255, 0.7);
 	}
+	.bar-container{
+		width:30%; 
+	} 
 } 
+
 .menu-hover-water{
 	width:232px;
 	height:50px;
@@ -196,12 +234,85 @@
 .white-bg{
 	background:rgba(255, 255, 255, 0.7);
 }
+@media all and (max-width: 1400px){
+	.bottle-animate{
+		margin-left:170px;
+		img{
+			margin-left:-100px;
+		}
+	}
+	.fadeIn{
+		img{
+			margin-left:-14px !important; 
+		}	
+	}
+	.trans-white{
+		width:36% !important;
+	}
+	.bar-container{
+		width: 31% !important;
+	}
+	.u-gridRow{
+		.col-detail:first-of-type{
+			width:32%; 
+		}
+	}
+}
 @media all and (max-width: 1300px){
 	.bottle-animate{
 		margin-left:80px;
 	}
 	.water-fles{
 		margin-left:-85px;
+	}
+	.u-gridRow{
+		.col-detail:first-of-type{
+			width:30%; 
+		}
+	}
+	.trans-white{
+		width:39% !important;
+	}
+	.bar-container{
+		width: 30% !important;
+	}
+} 
+@media all and (max-width: 1250px){
+	.bottle-animate{
+		//margin-left:80px;
+	} 
+	.water-fles{
+	//	margin-left:-85px;
+	}
+	.trans-white{ 
+		width:41% !important;
+	}
+	.bar-container{
+		width: 30% !important;
+	}
+	.u-gridRow{
+		.col-detail:first-of-type{
+			width:29%; 
+		}
+	}
+}
+@media all and (max-width: 1200px){
+	.bottle-animate{
+		//margin-left:80px;
+	}
+	.water-fles{
+		//margin-left:-85px;
+	}
+	.trans-white{
+		width:43% !important;
+	}
+	.bar-container{
+		width: 29% !important; 
+	}
+	.u-gridRow{
+		.col-detail:first-of-type{
+			width:28%; 
+		}
 	}
 }
 @media all and (max-width: 1126px){

@@ -27,6 +27,7 @@
  * Header
  * ============================================ */
  .top-menu{
+    padding:0px 20px; 
     a{
         font-size: 14px;
         color: rgb(99, 99, 99);
@@ -36,6 +37,7 @@
         }
     }
     .account-cart-wrapper{
+        margin-right: 20px;
         a{line-height:42px;}
     }
  }
@@ -383,8 +385,8 @@ a.skip-link {
 .account-cart-wrapper {
     position: absolute;
     top:0px;
-    right:0px;
-
+    right:0px; 
+    //margin-top:-10px;
     @include bp(max-width, $bp-medium) {
         position: static;
     }
