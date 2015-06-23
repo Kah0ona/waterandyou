@@ -370,8 +370,8 @@
 	margin-bottom:50px;
 		li{
 			width:50%;
-			margin-bottom:40px; 
-		}
+			//margin-bottom:40px; 
+		} 
 	}
 	.main-bottles{
 	margin-bottom:70px;
@@ -383,12 +383,32 @@
 @media all and (max-width: 660px){
 
 	}
-@media all and (max-width: 660px){
-	.trans-white{
-		width:100% !important;
+@media all and (max-width: 500px){
+	.fadeIn{
+		img{
+			display: none;
+		}	
 	}
 	.col-detail{
 		width:100% !important;
+		margin-top: 0px;
+	}
+	.trans-white{
+		width:100% !important;
+		padding-bottom:0px !important;
+	}
+	.tab_content{
+		padding:0px; 
+	}
+	.bottle-animate{
+		margin:0 auto;
+		margin-top: -30px; 
+		margin-bottom: -20px;
+		position: relative;
+		img{
+			margin:0px;
+			width:100%; 
+		}
 	}
 
 	.center{

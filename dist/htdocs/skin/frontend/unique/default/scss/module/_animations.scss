@@ -24,6 +24,7 @@ slideDown
 	}
 	
 }
+@media screen and (min-width: 500px) {
 .slideDown{
 	animation-name: slideDown;
 	-webkit-animation-name: slideDown;	
@@ -1129,7 +1130,7 @@ stretchRight
 		-webkit-transform: scaleX(1);
 	}		
 }
-
+}//einde media query
 //===tabs=====
 ul.tabs {
 	//margin: 50px 0px;
@@ -1189,16 +1190,21 @@ ul.tabs li.active {
 
 .tab_drawer_heading { display: none; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 	.tabs {
 		display: none;
 	}
+	.bar-value{
+		margin-left:25%;
+	}
 	.tab_drawer_heading {
-		background-color: #ccc;
-		color: #fff;
-		border-top: 1px solid #333;
+		background-color: rgba(200, 231, 252, 0.7);
+		@include background-image(linear-gradient(to right, rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), white, white )); 
+		border-top: 1px solid #fff;
 		margin: 0;
 		padding: 5px 20px;
+		margin-left:-20px;
+		margin-top:5px;
 		display: block;
 		cursor: pointer;
 		-webkit-touch-callout: none;
@@ -1206,10 +1212,40 @@ ul.tabs li.active {
 		-khtml-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
-		user-select: none;
+		user-select: none; 
 	}
 	.d_active {
-		background-color: #666;
-		color: #fff;
+		@include background-image(linear-gradient(to left, rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), rgba(200, 231, 252, 0.7), white )); 
+		margin-left:0px; 
+		margin-right: -20px; 
+		text-align: right; 
+	}
+	.tab-li-1{
+			color:#108246;
+		
+		strong{
+			color:black; 
+		}
+	}
+	.tab-li-2{
+			color:#F6342A;
+		
+		strong{
+			color:black;
+		}
+	}
+	.tab-li-3{
+			color:#A82527;
+		
+		strong{
+			color:black;
+		}
+	}
+	.tab-li-4{
+			color:#8DF13F;
+		
+		strong{
+			color:black;
+		}
 	}
 }
