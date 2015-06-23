@@ -3708,12 +3708,7 @@ a.skip-link {
 }
 .account-cart-wrapper {
   position: absolute;
-<<<<<<< HEAD
   top: -6px;
-=======
-  top: -7px;
->>>>>>> dcbe27576d6a8f9f8108131836e95cbca8854641
-  right: 0px;
 }
 @media only screen and (max-width: 770px) {
   .account-cart-wrapper {
