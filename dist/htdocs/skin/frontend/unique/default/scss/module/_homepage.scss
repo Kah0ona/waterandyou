@@ -22,7 +22,6 @@
 .show-for-large-2{ 
 	display:block; 
 }
-<<<<<<< HEAD
 .input-box{
 	#comment{
 	max-width:100%;	
@@ -30,7 +29,6 @@
 	}
 	
 }
-=======
 
 //productoverzicht hiden; een JavaScript toont het daarna wel weer.
 #nav .level0.nav-2,
@@ -41,7 +39,7 @@
 
 
 
->>>>>>> a3ad5300dedb3d8ebb0c16ee0fac2ba5b9782429
+
 .bubble-background{
 	background-image: url(../images/waterbackground.jpg);  
 	width:100%;
@@ -116,6 +114,7 @@
 	margin-right:20px; 
 	margin-top:45px;
 	p{
+		color:#636363; 
 		//font-family: 'Opens Sans'; 
 		font-size: 14px !important; 
 	} 
@@ -187,18 +186,18 @@
 	min-height:500px;
 }
 .bottle-box-head{
-	@extend .bottle-box;
+	@extend .bottle-box; 
 	border-radius:15px 15px 0px 0px;
 	&:hover{
 		background-color:#c8e7fc;
-		@include background-image(linear-gradient(to bottom, #c8e7fc, #c8e7fc, #c8e7fc, #fff, #fff)); 
+		@include background-image(linear-gradient(to bottom, #c8e7fc, #fff, #fff)); 
 		cursor:pointer; 
 	} 
 
 }
 .active-tab{
 	background-color:#c8e7fc;
-	@include background-image(linear-gradient(to bottom, #c8e7fc, #c8e7fc, #c8e7fc, #fff, #fff));
+	@include background-image(linear-gradient(to bottom, #c8e7fc, #fff, #fff));
 }
 .product-tab{
 }
@@ -342,5 +341,23 @@ img{
 	.cont-abso{
 		top:-754px;
 		margin-right:20px;
+	} 
+	.bubbles{
+		display:none;
+	}
+}
+@media all and (max-width: 480px){
+	.bubble-background{
+		height:2350px;
+	}
+}
+@media all and (max-width: 450px){
+	.bubble-background{
+		height:2250px;
+	}
+}
+@media all and (max-width: 400px){
+	.bubble-background{
+		height:2200px;
 	}
 }

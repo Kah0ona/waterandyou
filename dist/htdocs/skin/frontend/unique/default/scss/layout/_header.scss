@@ -38,7 +38,10 @@
     }
     .account-cart-wrapper{
         margin-right: 20px;
-        a{line-height:42px;}
+        a{
+            line-height:42px;
+            background:none; 
+        }
     }
  }
 .center{
@@ -87,7 +90,10 @@
         background:none;
     }
     h3{
-        line-height: 0.5;
+        line-height: 1.5;
+        img{
+            margin-top: 8px; 
+        }
     }
 }
 .header-language-background {
@@ -384,7 +390,7 @@ a.skip-link {
 
 .account-cart-wrapper {
     position: absolute;
-    top:0px;
+    top:-7px;
     right:0px; 
     //margin-top:-10px;
     @include bp(max-width, $bp-medium) {

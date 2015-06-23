@@ -114,6 +114,7 @@
 	margin-right:20px; 
 	margin-top:45px;
 	p{
+		color:#636363; 
 		//font-family: 'Opens Sans'; 
 		font-size: 14px !important; 
 	} 
@@ -185,18 +186,18 @@
 	min-height:500px;
 }
 .bottle-box-head{
-	@extend .bottle-box;
+	@extend .bottle-box; 
 	border-radius:15px 15px 0px 0px;
 	&:hover{
 		background-color:#c8e7fc;
-		@include background-image(linear-gradient(to bottom, #c8e7fc, #c8e7fc, #c8e7fc, #fff, #fff)); 
+		@include background-image(linear-gradient(to bottom, #c8e7fc, #fff, #fff)); 
 		cursor:pointer; 
 	} 
 
 }
 .active-tab{
 	background-color:#c8e7fc;
-	@include background-image(linear-gradient(to bottom, #c8e7fc, #c8e7fc, #c8e7fc, #fff, #fff));
+	@include background-image(linear-gradient(to bottom, #c8e7fc, #fff, #fff));
 }
 .product-tab{
 }
@@ -340,5 +341,23 @@ img{
 	.cont-abso{
 		top:-754px;
 		margin-right:20px;
+	} 
+	.bubbles{
+		display:none;
+	}
+}
+@media all and (max-width: 480px){
+	.bubble-background{
+		height:2350px;
+	}
+}
+@media all and (max-width: 450px){
+	.bubble-background{
+		height:2250px;
+	}
+}
+@media all and (max-width: 400px){
+	.bubble-background{
+		height:2200px;
 	}
 }
