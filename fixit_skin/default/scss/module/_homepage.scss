@@ -38,6 +38,85 @@
 }
 
 
+//app page
+
+.google-play-app {
+	margin-top: -93px; 
+	width: 83%; 
+	margin-left: 20px;
+}
+.mobile-app-col2 {
+	margin-top: 10px;
+}
+.mobile-app-col3 {
+	margin-bottom: 60px; 
+	margin-top: 10px;
+}
+.screenshot-iphone {
+	width: 63%;
+    float: right; 
+	margin-top: -100px; 
+	margin-right: 70px;
+}
+@media all and (max-width: 800px){
+	.google-play-app {
+		margin-top: 0px !important;
+		float: left;
+	}
+
+	.mobile-app-text {
+		float: left !important;
+	}
+
+	.mobile-app-col2 {
+		margin-top: 0px;
+		float: left !important;
+
+	}
+
+	.mobile-app-col3 {
+		float: left !important;
+	}
+
+	.screenshot-iphone {
+		width: 520px;
+		float: none; 
+		margin: 0 auto;
+
+	}
+
+
+}
+@media all and (max-width: 500px){
+	.google-play-app {
+		margin-top: 0px !important;
+		float: none;
+	}
+
+	.mobile-app-text {
+		float: none !important;
+	}
+
+	.mobile-app-col2 {
+		margin-top: 0px;
+		float: none !important;
+
+	}
+
+	.mobile-app-col3 {
+		float: none !important;
+	}
+
+	.screenshot-iphone {
+		width: 320px;
+		float: none; 
+		margin: 0 auto;
+
+	}
+
+}
+
+
 
 
 .bubble-background{

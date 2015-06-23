@@ -1,0 +1,9 @@
+# TODO 16-6-2015 van karim:
+# -In de bijlage het app-icoontje wat Melle wilde doorvoeren, maar net niet aan toekwam.
+# -Op de pagina over ons, is tekst in het midden wat zachter dan links. Graag alles zelfde als middenstuk maken qua lettertype.
+? -Op de homepage en bij het flesje zelf, bij Water& free, dit stuk tekst weghalen: Binnenkort is ‘Water& Free’verkrijgbaar en kun je kiezen uit de smaken: Perzik & Ananas of Appel. Houd deze website in de gaten voor de aankondiging!
+ 
+# -App pagina moest nog gestyled worden
+# -In menuopties, “Water & App” wijzigen naar “ONZE APP” en “over” wijzigen naar “over ons”
+# -In footer het google play logotje clickable maken.
+ 
